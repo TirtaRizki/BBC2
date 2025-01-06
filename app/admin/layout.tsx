@@ -1,23 +1,33 @@
-// app/admin/layout.tsx
-'use client';
+import Link from "next/link";
 
-import React from 'react';
-import Link from 'next/link';
-
-export default function AdminLayout({ 
-  children 
-}: { 
-  children: React.ReactNode 
-}) {
+const Sidebar = () => {
   return (
-    <div>
-         {/* Sidebar */}
-      <aside className="w-64 bg-white border-r">
-        <div className="p-4">
-          <h1 className="text-xl font-bold text-black">SecondBrand.co</h1>
-        </div>
-      </aside>
-      {children}
+    <div className="w-64 bg-gray-900 text-white h-screen fixed">
+      <div className="p-4 font-bold text-lg">Admin Panel</div>
+      <nav className="mt-4">
+        <ul>
+          <li className="p-2 hover:bg-gray-700">
+            <Link href="/admin">🕒 Dashboard</Link>
+          </li>
+          <li className="p-2 hover:bg-gray-700">
+            <Link href="/admin/products">📦 Products</Link>
+          </li>
+          <li className="p-2 hover:bg-gray-700">
+            <Link href="/admin/orders">🛒 Orders</Link>
+          </li>
+          <li className="p-2 hover:bg-gray-700">
+            <Link href="/admin/users">👥 Users</Link>
+          </li>
+          <li className="p-2 hover:bg-gray-700">
+            <Link href="/admin/testimonials">💬 Testimonials</Link>
+          </li>
+          <li className="p-2 hover:bg-gray-700">
+            <Link href="/admin/settings">⚙ Settings</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
-}
+};
+
+export default Sidebar;
