@@ -49,10 +49,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </h1>
                 <div className="hidden md:flex items-center space-x-8">
                   <NavLink href="/">Home</NavLink>
-                  {/* <NavLink href="/products">Products</NavLink>
+                  <NavLink href="/products">Products</NavLink>
                   <NavLink href="/categories">Categories</NavLink>
                   <NavLink href="/about">About</NavLink>
-                  <NavLink href="/contact">Contact</NavLink> */}
+                  <NavLink href="/contact">Contact</NavLink>
                 </div>
                 <div className="flex items-center space-x-4">
                   <button className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-200">
