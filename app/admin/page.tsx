@@ -11,34 +11,34 @@ const DashboardPage = () => {
       price: "Rp.625.000",
       status: "In Stock"
     },
-    // {
-    //   id: 2,
-    //   name: "Nike Air Zoom Pegasus 40",
-    //   brand: "Nike",
-    //   price: "Rp.850.000",
-    //   status: "Low Stock"
-    // },
-    // {
-    //   id: 3,
-    //   name: "Puma RS-X3 Puzzle",
-    //   brand: "Puma",
-    //   price: "Rp.700.000",
-    //   status: "Out of Stock"
-    // },
-    // {
-    //   id: 4,
-    //   name: "New Balance 990v5",
-    //   brand: "New Balance",
-    //   price: "Rp.900.000",
-    //   status: "In Stock"
-    // },
-    // {
-    //   id: 5,
-    //   name: "Reebok Nano X2",
-    //   brand: "Reebok",
-    //   price: "Rp.875.000",
-    //   status: "In Stock"
-    // }
+    {
+      id: 2,
+      name: "Nike Air Zoom Pegasus 40",
+      brand: "Nike",
+      price: "Rp.850.000",
+      status: "Low Stock"
+    },
+    {
+      id: 3,
+      name: "Puma RS-X3 Puzzle",
+      brand: "Puma",
+      price: "Rp.700.000",
+      status: "Out of Stock"
+    },
+    {
+      id: 4,
+      name: "New Balance 990v5",
+      brand: "New Balance",
+      price: "Rp.900.000",
+      status: "In Stock"
+    },
+    {
+      id: 5,
+      name: "Reebok Nano X2",
+      brand: "Reebok",
+      price: "Rp.875.000",
+      status: "In Stock"
+    }
   ];  
 
   return (
