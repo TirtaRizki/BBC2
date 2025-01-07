@@ -35,11 +35,18 @@ const UsersPage = () => {
         </div>
       </div>
 
-      {/* Users Table */}
+      {/* Admin Table */}
       <div className="bg-white text-black rounded-lg shadow">
         <table className="w-full">
           <thead>
-        
+          <tr className="border-b">
+              <th className="text-left p-4">Admin</th>
+              <th className="text-left p-4">Email</th>
+              <th className="text-left p-4">Phone</th>
+              <th className="text-left p-4">Role</th>
+              <th className="text-left p-4">Status</th>
+              <th className="text-left p-4">Actions</th>
+              </tr>
           </thead>
           <tbody>
             {[1, 2, 3].map((item) => (
