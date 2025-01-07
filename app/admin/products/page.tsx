@@ -12,6 +12,23 @@ export default function ProductsPage() {
           + Add New Product
         </button>
       </div>
+      <div className="grid grid-cols-3 gap-4 mb-4">
+        <select className="p-2 border rounded">
+          <option>All Brands</option>
+          <option>Nike</option>
+          <option>Adidas</option>
+        </select>
+        <select className="p-2 border rounded">
+          <option>All Conditions</option>
+          <option>New</option>
+          <option>Used</option>
+        </select>
+        <select className="p-2 border rounded">
+          <option>All Status</option>
+          <option>Active</option>
+          <option>Inactive</option>
+        </select>
+      </div>
       </div>
     );
   }
