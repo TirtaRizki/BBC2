@@ -78,9 +78,12 @@ const UsersPage = () => {
                   </select>
                 </td>
                 <td className="p-4">
-                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full">
-                   
-                  </span>
+                <select className="p-4 rounded-full bg-white">
+                <option className="bg-green-100 text-green-800 px-2 py-1 rounded-full">Active</option>
+                <option className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Inactive</option>
+                <option className="bg-red-100 text-red-800 px-2 py-1 rounded-full">Blocked</option>
+                </select>
+
                 </td>
                 <td className="p-4">
                   <div className="flex gap-2">
