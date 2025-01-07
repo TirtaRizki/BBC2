@@ -68,7 +68,8 @@ const UsersPage = () => {
                 </td>
                 <td className="p-4">
                   <div className="flex items-center gap-2">
-                   
+                  <Phone className="h-4 w-4 text-blue" />
+                  <span>+62 812-7842-5988</span>
                   </div>
                 </td>
                 <td className="p-4 text-white" >
