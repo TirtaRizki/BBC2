@@ -58,7 +58,7 @@ const DashboardPage = () => {
         </div>
 
         {/* Total Orders Card */}
-        {/* <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg shadow-md">
           <div className="flex justify-between items-start">
             <div>
               <h2 className="text-gray-600 font-bold">Total Orders</h2>
@@ -66,10 +66,10 @@ const DashboardPage = () => {
             </div>
             <ShoppingCart className="h-6 w-6 text-green-600" />
           </div>
-        </div> */}
+        </div>
 
         {/* Active Users Card */}
-        {/* <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg shadow-md">
           <div className="flex justify-between items-start">
             <div>
               <h2 className="text-gray-600 font-bold">Active Users</h2>
@@ -77,7 +77,7 @@ const DashboardPage = () => {
             </div>
             <Users className="h-6 w-6 text-purple-600" />
           </div>
-        </div> */}
+        </div>
 
         {/* Total Revenue Card */}
         <div className="bg-white p-6 rounded-lg shadow-md">
