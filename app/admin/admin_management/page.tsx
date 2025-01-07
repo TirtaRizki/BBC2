@@ -13,40 +13,33 @@ const UsersPage = () => {
       </div>
 
       {/* Filters */}
-      {/* <div className="bg-white p-4 rounded-lg shadow mb-6">
+      <div className="bg-white p-4 rounded-lg shadow mb-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="relative">
-            <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+            <Search className="absolute left-3 top-2.5 h-5 w-5 text-black" />
             <input
               type="text"
               placeholder="Search admin..."
               className="pl-10 pr-4 py-2 border rounded-lg w-full"
             />
           </div>
-          <select className="border rounded-lg px-4 py-2">
+          <select className="border rounded-lg px-4 py-2 text-black">
             <option>All Roles</option>
             <option>Admin</option>
           </select>
-          <select className="border rounded-lg px-4 py-2">
+          <select className="border rounded-lg px-4 py-2 text-black">
             <option>All Status</option>
             <option>Active</option>
             <option>Inactive</option>
           </select>
         </div>
-      </div> */}
+      </div>
 
       {/* Users Table */}
       <div className="bg-white text-black rounded-lg shadow">
         <table className="w-full">
           <thead>
-            {/* <tr className="border-b">
-              <th className="text-left p-4">User</th>
-              <th className="text-left p-4">Email</th>
-              <th className="text-left p-4">Phone</th>
-              <th className="text-left p-4">Role</th>
-              <th className="text-left p-4">Status</th>
-              <th className="text-left p-4">Actions</th>
-            </tr> */}
+        
           </thead>
           <tbody>
             {[1, 2, 3].map((item) => (
