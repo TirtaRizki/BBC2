@@ -62,7 +62,8 @@ const UsersPage = () => {
                 </td>
                 <td className="p-4">
                   <div className="flex items-center gap-2">
-                    
+                  <Mail className="h-4 w-4 text-black" />
+                  <span>tirtarzk30@gmail.com</span>
                   </div>
                 </td>
                 <td className="p-4">
