@@ -21,8 +21,6 @@ const NavLink = ({ href, children }: NavLinkProps) => (
   </Link>
 );
 
-
-
 // Footer Component
 const Footer = () => (
   <footer className="bg-gray-900 text-gray-300">
