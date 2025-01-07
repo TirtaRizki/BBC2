@@ -73,8 +73,8 @@ const UsersPage = () => {
                   </div>
                 </td>
                 <td className="p-4 text-white" >
-                  <select className="border rounded px-2 py-1">
-                    
+                  <select className="border rounded px-2 py-1 bg-black">
+                  <option>Admin</option>
                   </select>
                 </td>
                 <td className="p-4">
