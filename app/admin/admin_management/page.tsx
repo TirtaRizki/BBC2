@@ -53,39 +53,36 @@ const UsersPage = () => {
               <tr key={item} className="border-b">
                 <td className="p-4">
                   <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 bg-gray-200 rounded-full"></div>
+                    <div className=" h-10 w-10 bg-black rounded-full"></div>
                     <div>
-                      {/* <p className="font-medium">John Doe</p>
-                      <p className="text-sm text-gray-500">Joined Mar 2024</p> */}
+                    <p className="font-medium">Tirta Rizki</p>
+                    <p className="text-sm text-black">Joined Feb 2017</p>
                     </div>
                   </div>
                 </td>
                 <td className="p-4">
                   <div className="flex items-center gap-2">
-                    {/* <Mail className="h-4 w-4 text-gray-400" />
-                    <span>john@example.com</span> */}
+                    
                   </div>
                 </td>
                 <td className="p-4">
                   <div className="flex items-center gap-2">
-                    {/* <Phone className="h-4 w-4 text-gray-400" />
-                    <span>+62 812-3456-7890</span> */}
+                   
                   </div>
                 </td>
                 <td className="p-4 text-white" >
                   <select className="border rounded px-2 py-1">
-                    {/* <option>Admin</option> */}
+                    
                   </select>
                 </td>
                 <td className="p-4">
                   <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full">
-                    {/* Active */}
+                   
                   </span>
                 </td>
                 <td className="p-4">
                   <div className="flex gap-2">
-                    {/* <button className="text-blue-600 hover:underline">Edit</button>
-                    <button className="text-red-600 hover:underline">Block</button> */}
+                   
                   </div>
                 </td>
               </tr>
