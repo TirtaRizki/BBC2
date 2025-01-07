@@ -83,11 +83,10 @@ const UsersPage = () => {
                 <option className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Inactive</option>
                 <option className="bg-red-100 text-red-800 px-2 py-1 rounded-full">Blocked</option>
                 </select>
-
                 </td>
                 <td className="p-4">
                   <div className="flex gap-2">
-                   
+                  <button className="text-blue-600 hover:underline">Edit</button>
                   </div>
                 </td>
               </tr>
