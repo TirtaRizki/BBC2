@@ -11,3 +11,5 @@ const TestimonialPage = () => {
         </main>
     )
 };
+
+export default TestimonialPage;
