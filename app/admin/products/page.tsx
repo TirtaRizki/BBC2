@@ -29,6 +29,31 @@ export default function ProductsPage() {
           <option>Inactive</option>
         </select>
       </div>
+      <table className="w-full border-collapse border">
+        <thead className="bg-gray-200">
+          <tr>
+            <th className="border p-2">Product</th>
+            <th className="border p-2">Brand</th>
+            <th className="border p-2">Size</th>
+            <th className="border p-2">Price</th>
+            <th className="border p-2">Status</th>
+            <th className="border p-2">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border p-2">Nike Air Max 90</td>
+            <td className="border p-2">Nike</td>
+            <td className="border p-2">42</td>
+            <td className="border p-2">Rp 1.200.000</td>
+            <td className="border p-2 text-green-500">Active</td>
+            <td className="border p-2">
+              <button className="text-blue-500 mr-2">Edit</button>
+              <button className="text-red-500">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       </div>
     );
   }
