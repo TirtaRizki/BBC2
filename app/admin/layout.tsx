@@ -46,22 +46,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <nav>
             <ul className="space-y-5">
               <li>
-                <NavLink href="./admin">🕒 Dashboard</NavLink>
+                <NavLink href="/admin">🕒 Dashboard</NavLink>
               </li>
               <li>
-                <NavLink href="./admin/products">📦 Products</NavLink>
+                <NavLink href="/admin/products">📦 Products</NavLink>
               </li>
               <li>
                 <NavLink href="#">🛒 Orders</NavLink>
               </li>
               <li>
-                <NavLink href="./admin/admin_management">👥 Admin</NavLink>
+                <NavLink href="/admin/admin_management">👥 Admin</NavLink>
               </li>
               <li>
-                <NavLink href="./admin/testimonials">💬 Testimonials</NavLink>
+                <NavLink href="/admin/testimonials">💬 Testimonials</NavLink>
               </li>
               <li>
-                <NavLink href="./admin/settings">⚙ Settings</NavLink>
+                <NavLink href="/admin/settings">⚙ Settings</NavLink>
               </li>
             </ul>
           </nav>
