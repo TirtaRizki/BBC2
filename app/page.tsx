@@ -136,11 +136,11 @@ export default function Home() {
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl font-bold text-gray-900">New Arrivals</h2>
           <button className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
-            <Filter className="w-4 h-4" />
+            <Filter className="w-4 h-4 text-black" />
             <span>Filter</span>
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-black">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
