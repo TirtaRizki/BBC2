@@ -2,6 +2,7 @@
 
 
 import './globals.css';
+import './admin/layout.tsx';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { ShoppingBag, Search, Menu, X } from 'lucide-react';
@@ -21,9 +22,22 @@ const NavLink = ({ href, children }: NavLinkProps) => (
   </Link>
 );
 
+
 // Footer Component
 const Footer = () => (
   <footer className="bg-gray-900 text-gray-300">
+    <div className="max-w-7xl mx-auto px-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h4 className="font-bold mb-4">About</h4>
+          <p className="text-gray-400 text-sm">
+            SecondBrand.co, sebagai Mitra yang berfokus pada penjualan sepatu bekas branded, menghadapi tantangan dalam menjual produk mereka secara offline karena keterbatasan jangkauan geografis dan potensi pasar yang belum sepenuhnya dimanfaatkan.
+          </p>
+        </div>
+
+
+        </div>
+        </div>
     <div className="max-w-7xl mx-auto px-4 py-6 text-center">
       <p>&copy; 2024 SecondBrand.co. All rights reserved.</p>
     </div>
