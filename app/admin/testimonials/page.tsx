@@ -22,6 +22,10 @@ const TestimonialPage = () => {
                     ))}
                 </div>
             </div>
+            <p className="text-gray-600 mb-4">
+                "Layanan dan kualitas yang luar biasa! Sepatu yang saya beli dalam kondisi 
+                 sangat baik dan persis seperti yang dijelaskan. Pasti akan membeli lagi!"
+            </p>
         </main>
     )
 };
