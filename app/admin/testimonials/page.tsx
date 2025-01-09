@@ -32,6 +32,10 @@ const TestimonialPage = () => {
                         <ThumbsUp className="h-4 w-4" />
                         <span>Like</span>
                     </button>
+                    <button className="flex items-center gap-1 text-red-600 hover:text-red-700">
+                        <ThumbsDown className="h-4 w-4" />
+                        <span>Dislike</span>
+                    </button>
                 </div>
             </div>
         </main>
