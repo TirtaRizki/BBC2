@@ -37,8 +37,14 @@ const TestimonialPage = () => {
                         <span>Dislike</span>
                     </button>
                 </div>
+                <select className="border rounded px-2 py-1 text-sm text-black">
+                    <option>Dipublikasikan</option>
+                    <option>Tersembunyi</option>
+                    <option>Menunggu</option>
+                </select>
             </div>
         </main>
+
     )
 };
 
