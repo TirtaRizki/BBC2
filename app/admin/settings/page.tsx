@@ -1,5 +1,6 @@
-import { useState } from "react";
+'use client';
 
+import { useState } from "react";
 
 export default function SettingsPage() {
     // State untuk setiap input
@@ -59,6 +60,15 @@ export default function SettingsPage() {
                             className="w-full p-2 border rounded bg-gray-800 text-white"
                             rows={4}
                         ></textarea>
+                    </div>
+                    {/* Submit Button */}
+                    <div>
+                        <button
+                            type="submit"
+                            className="bg-blue-500 text-white px-4 py-2 rounded"
+                        >
+                            Save Settings
+                        </button>
                     </div>
                 </form>
             </div>
