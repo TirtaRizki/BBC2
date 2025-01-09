@@ -20,6 +20,7 @@ const TestimonialPage = () => {
             </div>
 
             <div className="flex gap-4 mb-6">
+                {/* Filter All Ratings */}
                 <select className="px-3 py-2 border rounded-lg text-gray-600">
                     <option value="">All Ratings</option>
                     <option value="5">5 Stars</option>
@@ -28,8 +29,17 @@ const TestimonialPage = () => {
                     <option value="2">2 Stars</option>
                     <option value="1">1 Star</option>
                 </select>
+                
+                {/* Filter All Status */}
+                <select className="px-3 py-2 border rounded-lg text-gray-600">
+                    <option value="">All Status</option>
+                    <option value="published">Dipublikasikan</option>
+                    <option value="hidden">Tersembunyi</option>
+                    <option value="pending">Menunggu</option>
+                </select>
             </div>
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            
+            <div className="bg-white rounded-lg shadow-sm p-6 mt-4">
                 <div className="flex justify-between mb-4">
                     <div className="flex items-center gap-3">
                         <div className="h-10 w-10 bg-gray-200 rounded-full"></div>
@@ -68,6 +78,8 @@ const TestimonialPage = () => {
                     </select>
                 </div>
             </div>
+
+            {/* Next Pagination */}
             <div className="p-4 border-t">
                 <div className="flex items-center justify-between">
                     <p className="text-gray-500">Showing 1 of 10</p>
