@@ -51,6 +51,20 @@ const Footer = () => (
             <li>WhatsApp: +62-812-7842-5988</li>
           </ul>
         </div>
+        <div>
+          <h4 className="font-bold mb-4">Follow Us</h4>
+          <ul className="text-gray-400 text-sm space-y-2">
+            <li>
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </li>
+          </ul>
+        </div>
         </div>
         </div>
     <div className="max-w-7xl mx-auto px-4 py-6 text-center">
