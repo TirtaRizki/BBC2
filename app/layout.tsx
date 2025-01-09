@@ -34,7 +34,15 @@ const Footer = () => (
             SecondBrand.co, sebagai Mitra yang berfokus pada penjualan sepatu bekas branded, menghadapi tantangan dalam menjual produk mereka secara offline karena keterbatasan jangkauan geografis dan potensi pasar yang belum sepenuhnya dimanfaatkan.
           </p>
         </div>
-
+        <div>
+          <h4 className="font-bold mb-4">Jam Kerja</h4>
+          <ul className="text-gray-400 text-sm space-y-2">
+            <li>Senin - Sabtu</li>
+            <li>09.00 WIB - 22.00 WIB</li>
+            <li>Minggu</li>
+            <li>10.00 WIB - 20.00 WIB</li>
+          </ul>
+        </div>
 
         </div>
         </div>
