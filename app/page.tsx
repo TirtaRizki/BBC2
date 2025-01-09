@@ -57,9 +57,7 @@ const ProductCard = ({ product }: { product: Product }) => (
           {[...Array(5)].map((_, i) => (
             <Star
               key={i}
-              className={`w-4 h-4 ${
-                i < product.rating ? 'text-yellow-400' : 'text-gray-300'
-              }`}
+              className={`w-4 h-4 ${i < product.rating ? 'text-yellow-400' : 'text-gray-300'}`}
             />
           ))}
         </div>
@@ -154,15 +152,56 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature) => (
-              <div key={feature.title} className="text-center p-6 bg-white rounded-lg shadow-md">
+              <div
+                key={feature.title}
+                className="text-center p-6 bg-white rounded-lg shadow-md"
+              >
                 {feature.icon()}
-                <h3 className="text-xl font-bold text-gray-900 mt-4 mb-2">{feature.title}</h3>
-                <p className="text-gray-500">{feature.description}</p>
+                <h3 className="text-xl font-bold text-black mt-4 mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-black">{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Featured Categories */}
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <h3 className="text-2xl font-bold mb-6 text-black">Categories</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-blue-500">
+          {['Sneakers', 'Sports', 'Casual', 'Formal'].map((category) => (
+            <div
+              key={category}
+              className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="aspect-square bg-gray-200 rounded-lg mb-4"></div>
+              <p className="text-center font-medium">{category}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Featured Products */}
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <h3 className="text-2xl font-bold mb-6 text-black">Featured Products</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {[1, 2, 3, 4].map((item) => (
+            <div
+              key={item}
+              className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="aspect-square bg-gray-200 rounded-t-lg"></div>
+              <div className="p-4">
+                <h4 className="font-medium mb-2 text-black">Nike Air Max</h4>
+                <p className="text-gray-600 text-sm mb-2 text-black">Size 42 - Like New</p>
+                <p className="font-bold text-blue-500">Rp 1.200.000</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
