@@ -19,6 +19,16 @@ const TestimonialPage = () => {
                 </div>
             </div>
 
+            <div className="flex gap-4 mb-6">
+                <select className="px-3 py-2 border rounded-lg text-gray-600">
+                    <option value="">All Ratings</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+            </div>
             <div className="bg-white rounded-lg shadow-sm p-6">
                 <div className="flex justify-between mb-4">
                     <div className="flex items-center gap-3">
