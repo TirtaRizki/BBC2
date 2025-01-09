@@ -1,4 +1,19 @@
+import { useState } from "react";
+
+
 export default function SettingsPage() {
+    // State untuk setiap input
+    const [storeName, setStoreName] = useState("");
+    const [contactEmail, setContactEmail] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("");
+    const [address, setAddress] = useState("");
+
+     // Fungsi untuk handle submit 
+     const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log("Store Settings Submitted:");
+        console.log({ storeName, contactEmail, phoneNumber, address });
+    };
     return (
         <div className="p-6">
             <h1 className="text-2xl font-bold mb-4 text-black">Settings</h1>
