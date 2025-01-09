@@ -22,9 +22,12 @@ const TestimonialPage = () => {
             </div>
             <div className="bg-white rounded-lg shadow-sm p-6">
                 <div className="flex justify-between mb-4">
-                <div className="flex items-center gap-3">
-          <div className="h-10 w-10 bg-gray-200 rounded-full"></div>
-          </div>
+                    <div className="flex items-center gap-3">
+                        <div className="h-10 w-10 bg-gray-200 rounded-full"></div>
+                        <div>
+                            <p className="font-medium text-black">Galih Pribadi Utomo</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
