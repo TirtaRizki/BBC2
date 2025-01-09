@@ -27,9 +27,13 @@ const TestimonialPage = () => {
                 sangat baik dan persis seperti yang dijelaskan. Pasti akan membeli lagi!"
             </p>
             <div className="flex items-center justify-between pt-4 border-t">
-                <div className="flex gap-4"></div>
+                <div className="flex gap-4">
+                    <button className="flex items-center gap-1 text-green-600 hover:text-green-700">
+                        <ThumbsUp className="h-4 w-4" />
+                        <span>Like</span>
+                    </button>
+                </div>
             </div>
-            
         </main>
     )
 };
