@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+
 export default function SettingsPage() {
     // State untuk setiap input
     const [storeName, setStoreName] = useState("");
@@ -18,7 +19,7 @@ export default function SettingsPage() {
     const [newPassword, setNewPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
 
-     // Fungsi untuk handle submit
+    // Fungsi untuk handle submit
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         console.log("Form Submitted:", {
@@ -74,8 +75,45 @@ export default function SettingsPage() {
                             rows={4}
                         ></textarea>
                     </div>
-                    
-                
+
+                    {/* Notification Settings */}
+                    <div className="bg-white p-6 rounded shadow-md mb-6">
+                        <h2 className="text-xl font-bold mb-4 text-black">Notification Settings</h2>
+                        <div className="flex items-center justify-between mb-4">
+                            <div>
+                                <p className="font-bold text-black">Order Notifications</p>
+                                <p className="text-sm text-gray-500">Receive notifications for new orders</p>
+                            </div>
+                            <label className="relative inline-flex items-center cursor-pointer">
+                                <input
+                                    type="checkbox"
+                                    checked={orderNotifications}
+                                    onChange={() => setOrderNotifications(!orderNotifications)}
+                                    className="sr-only peer"
+                                />
+                                <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 peer-checked:bg-blue-600"></div>
+                                <span className="absolute top-1 left-1 bg-white w-4 h-4 rounded-full transition-all peer-checked:translate-x-5"></span>
+                            </label>
+                        </div>
+                        <div className="flex items-center justify-between">
+                            <div>
+                                <p className="font-bold text-black">Review Notifications</p>
+                                <p className="text-sm text-gray-500">Receive notifications for new reviews</p>
+                            </div>
+                            <label className="relative inline-flex items-center cursor-pointer">
+                                <input
+                                    type="checkbox"
+                                    checked={reviewNotifications}
+                                    onChange={() => setReviewNotifications(!reviewNotifications)}
+                                    className="sr-only peer"
+                                />
+                                <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 peer-checked:bg-blue-600"></div>
+                                <span className="absolute top-1 left-1 bg-white w-4 h-4 rounded-full transition-all peer-checked:translate-x-5"></span>
+                            </label>
+                        </div>
+                    </div>
+
+
 
                     {/* Submit Button */}
                     <div>
