@@ -113,7 +113,40 @@ export default function SettingsPage() {
                         </div>
                     </div>
 
-
+                    {/* Security Settings */}
+                    <div className="bg-white p-6 rounded shadow-md mb-6">
+                        <h2 className="text-xl font-bold mb-4 text-black">Security Settings</h2>
+                        <div className="mb-4">
+                            <label className="block text-sm font-bold mb-2 text-black">Current Password</label>
+                            <input
+                                type="password"
+                                value={currentPassword}
+                                onChange={(e) => setCurrentPassword(e.target.value)}
+                                placeholder="Enter current password"
+                                className="w-full p-2 border rounded bg-gray-800 text-white"
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <label className="block text-sm font-bold mb-2 text-black">New Password</label>
+                            <input
+                                type="password"
+                                value={newPassword}
+                                onChange={(e) => setNewPassword(e.target.value)}
+                                placeholder="Enter new password"
+                                className="w-full p-2 border rounded bg-gray-800 text-white"
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <label className="block text-sm font-bold mb-2 text-black">Confirm New Password</label>
+                            <input
+                                type="password"
+                                value={confirmPassword}
+                                onChange={(e) => setConfirmPassword(e.target.value)}
+                                placeholder="Confirm new password"
+                                className="w-full p-2 border rounded bg-gray-800 text-white"
+                            />
+                        </div>
+                    </div>
 
                     {/* Submit Button */}
                     <div>
