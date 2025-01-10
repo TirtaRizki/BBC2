@@ -1,6 +1,5 @@
 'use client';
 
-import { Bell, Shield } from "lucide-react";
 import { useState } from "react";
 
 export default function SettingsPage() {
@@ -10,12 +9,25 @@ export default function SettingsPage() {
     const [phoneNumber, setPhoneNumber] = useState("");
     const [address, setAddress] = useState("");
 
-    // Fungsi untuk handle submit 
+    // State untuk Notification Settings
+    const [orderNotifications, setOrderNotifications] = useState(true);
+    const [reviewNotifications, setReviewNotifications] = useState(true);
+
+    // State untuk Security Settings
+    const [currentPassword, setCurrentPassword] = useState("");
+    const [newPassword, setNewPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+
+     // Fungsi untuk handle submit
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        console.log("Store Settings Submitted:");
-        console.log({ storeName, contactEmail, phoneNumber, address });
+        console.log("Form Submitted:", {
+            storeSettings: { storeName, contactEmail, phoneNumber, address },
+            notificationSettings: { orderNotifications, reviewNotifications },
+            securitySettings: { currentPassword, newPassword, confirmPassword },
+        });
     };
+
     return (
         <div className="p-6">
             <h1 className="text-2xl font-bold mb-4 text-black">Settings</h1>
@@ -62,71 +74,8 @@ export default function SettingsPage() {
                             rows={4}
                         ></textarea>
                     </div>
-
-                    {/* Notification Settings */}
-                    <div className="bg-white rounded-lg shadow p-6">
-                        <div className="flex items-center gap-2 mb-4">
-                            <Bell className="h-5 w-5 text-primary text-black" />
-                            <h2 className="text-xl font-bold text-gray-800">Notification Settings</h2>
-                        </div>
-                        <div className="space-y-4">
-                            <div className="flex items-center justify-between">
-                                <div>
-                                    <p className="font-medium text-gray-800">Order Notifications</p>
-                                    <p className="text-sm text-gray-600">Receive notifications for new orders</p>
-                                </div>
-                                <input type="checkbox" className="toggle toggle-primary" defaultChecked />
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <div>
-                                    <p className="font-medium text-gray-800">Review Notifications</p>
-                                    <p className="text-sm text-gray-600">Receive notifications for new reviews</p>
-                                </div>
-                                <input type="checkbox" className="toggle toggle-primary" defaultChecked />
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Security Settings */}
-                    <div className="bg-white rounded-lg shadow p-6">
-                        <div className="flex items-center gap-2 mb-4">
-                            <Shield className="h-5 w-5 text-primary text-black" />
-                            <h2 className="text-xl font-bold text-gray-800">Security Settings</h2>
-                        </div>
-                        <div className="space-y-4">
-                            <div>
-                                <label className="block text-sm font-medium text-gray-600 mb-2">
-                                    Current Password
-                                </label>
-                                <input
-                                    type="password"
-                                    className="input input-bordered w-full"
-                                    placeholder="Enter current password"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-600 mb-2">
-                                    New Password
-                                </label>
-                                <input
-                                    type="password"
-                                    className="input input-bordered w-full"
-                                    placeholder="Enter new password"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-600 mb-2">
-                                    Confirm New Password
-                                </label>
-                                <input
-                                    type="password"
-                                    className="input input-bordered w-full"
-                                    placeholder="Confirm new password"
-                                />
-                            </div>
-                        </div>
-                    </div>
-
+                    
+                
 
                     {/* Submit Button */}
                     <div>
