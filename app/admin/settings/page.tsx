@@ -1,6 +1,6 @@
 'use client';
 
-import { Bell } from "lucide-react";
+import { Bell, Shield } from "lucide-react";
 import { useState } from "react";
 
 export default function SettingsPage() {
@@ -83,6 +83,46 @@ export default function SettingsPage() {
                                     <p className="text-sm text-gray-600">Receive notifications for new reviews</p>
                                 </div>
                                 <input type="checkbox" className="toggle toggle-primary" defaultChecked />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Security Settings */}
+                    <div className="bg-white rounded-lg shadow p-6">
+                        <div className="flex items-center gap-2 mb-4">
+                            <Shield className="h-5 w-5 text-primary text-black" />
+                            <h2 className="text-xl font-bold text-gray-800">Security Settings</h2>
+                        </div>
+                        <div className="space-y-4">
+                            <div>
+                                <label className="block text-sm font-medium text-gray-600 mb-2">
+                                    Current Password
+                                </label>
+                                <input
+                                    type="password"
+                                    className="input input-bordered w-full"
+                                    placeholder="Enter current password"
+                                />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium text-gray-600 mb-2">
+                                    New Password
+                                </label>
+                                <input
+                                    type="password"
+                                    className="input input-bordered w-full"
+                                    placeholder="Enter new password"
+                                />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium text-gray-600 mb-2">
+                                    Confirm New Password
+                                </label>
+                                <input
+                                    type="password"
+                                    className="input input-bordered w-full"
+                                    placeholder="Confirm new password"
+                                />
                             </div>
                         </div>
                     </div>
