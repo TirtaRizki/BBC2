@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <NavLink href="/admin/products">📦 Products</NavLink>
               </li>
               <li>
-                <NavLink href="#">🛒 Orders</NavLink>
+                <NavLink href="/admin/orders">🛒 Orders</NavLink>
               </li>
               <li>
                 <NavLink href="/admin/admin_management">👥 Admin</NavLink>
