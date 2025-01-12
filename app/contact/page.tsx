@@ -47,7 +47,44 @@ const ContactPage = () => {
             </form>
           </div>
 
+        {/* Contact Info */}
+        <div>
+            <div className="bg-black rounded-xl shadow-sm p-6 mb-8">
+              <h3 className="font-bold mb-6">Contact Information</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="p-2 bg-blue-50 rounded-lg">
+                    <MapPin className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Lokasi Toko</p>
+                    <p className="text-gray-600">Jl. Bangau, Sukarame, Kec. Sukarame</p>
+                    <p className="text-gray-600">Sukarame, Bandar Lampung 35131</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-2 bg-blue-50 rounded-lg">
+                    <Phone className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Phone</p>
+                    <p className="text-gray-600">+62 812 7842 5988</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-2 bg-blue-50 rounded-lg">
+                    <Mail className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Email</p>
+                    <p className="text-gray-600">tirtarzk30@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+
+                </div>
             </div>
          </div>
 
