@@ -1,5 +1,6 @@
 'use client';
 
+
 import React from 'react';
 import {
   Filter,
@@ -11,6 +12,8 @@ import {
   Shield,
   Truck,
   Lock,
+  Link,
+  PackageSearchIcon,
 } from 'lucide-react';
 
 // Komponen untuk Merek
@@ -122,8 +125,9 @@ export default function Home() {
             Sepatu Bekas yang berkualitas dan original, dengan harga yang terjangkau yang di import dari Batam dan Singapore untuk memenuhi kebutuhan Konsumen .
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 transform hover:scale-105">
-            Explore Collection
-          </button>
+          <a href="./products">Lihat Produk</a>
+        </button>
+
         </div>
       </section>
 
