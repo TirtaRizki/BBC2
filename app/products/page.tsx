@@ -50,8 +50,24 @@ const ProductPage = () => {
               </select>
             </div>
         </div>
-        </div>
-        </div>
+    </div>
+</div>
+
+        {/* <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="flex flex-col md:flex-row gap-8 text-black"> */}
+          {/* Filters Sidebar */}
+          {/* <div className={`md:w-64 bg-blue-300 p-6 rounded-lg shadow-sm ${showFilters ? 'block' : 'hidden md:block'}`}>
+            <div className="space-y-6"> */}
+              {/* Brand Filter */}
+              <div>
+                <h3 className="font-medium mb-4 text-black">Brand</h3>
+                {['Nike', 'Adidas', 'Puma', 'New Balance'].map(brand => (
+                  <label key={brand} className="flex items-center space-x-2 mb-2 text-black">
+                    <input type="checkbox" className="rounded" />
+                    <span>{brand}</span>
+                  </label>
+                ))}
+              </div>
 
 
 
