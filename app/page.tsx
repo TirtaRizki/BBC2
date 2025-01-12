@@ -131,14 +131,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Brand Section */}
-      <BrandSection />
-
       {/* Products Section */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold text-gray-900">New Arrivals</h2>
-          <button className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+        <div className="flex items-center justify-between mb-8 bg-blue-400">
+          <h2 className="text-3xl font-bold text-red-900">New Arrivals</h2>
+          <button className="flex items-center space-x-2 px-4 py-2 border border-red-300 rounded-lg hover:bg-white">
             <Filter className="w-4 h-4 text-black" />
             <span>Filter</span>
           </button>
