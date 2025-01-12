@@ -84,7 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Main Layout */}
         <div className="flex-1 flex flex-col">
           {/* Navbar */}
-          <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+          <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-blue-900">
             <div className="max-w-7xl mx-auto px-4">
               <div className="flex items-center justify-between h-16">
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
