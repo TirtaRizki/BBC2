@@ -37,8 +37,18 @@ const ProductPage = () => {
                 <Filter className="w-5 h-5 mr-2" />
                 Filters
                 </button>
-
-
+                <div className="flex items-center gap-4">
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 "
+              >
+                <option value="newest">Newest</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="popular">Most Popular</option>
+              </select>
+            </div>
         </div>
         </div>
         </div>
