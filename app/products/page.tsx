@@ -133,7 +133,7 @@ const ProductPage = () => {
                       Like New
                     </span>
                   </div>
-                  {/* <div className="p-4">
+                  <div className="p-4">
                     <div className="flex justify-between items-start mb-2">
                       <h4 className="font-medium">Nike Air Max 90</h4>
                       <div className="flex items-center">
@@ -146,10 +146,10 @@ const ProductPage = () => {
                     <div className="flex justify-between items-center">
                       <p className="font-bold">Rp 1.200.000</p>
                       <button className="px-3 py-1 bg-blue-500 text-white rounded-full text-sm hover:bg-blue-600">
-                        Add to Cart
+                        Add to Wish
                       </button>
                     </div>
-                  </div> */}
+                  </div>
                 </div>
                ))}
             </div>
