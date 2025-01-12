@@ -116,11 +116,10 @@ export default function Home() {
         </div>
         <div className="relative z-10 text-center max-w-3xl px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Premium Second Brand Shoes
+            Sepatu Bekas Branded Premium Original
           </h1>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Discover authentic branded shoes at unbeatable prices. Carefully
-            curated and verified for quality.
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-red-400">
+            Sepatu Bekas yang berkualitas dan original, dengan harga yang terjangkau yang di import dari Batam dan Singapore untuk memenuhi kebutuhan Konsumen .
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 transform hover:scale-105">
             Explore Collection
