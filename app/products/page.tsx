@@ -15,6 +15,40 @@ const ProductPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
+        {/* Header */}
+        <div className="bg-white shadow-sm">
+            <div className="max-w-7xl mx-auto px-4 py-8">
+            <h1 className="text-2xl font-bold mb-4 text-black">Our Products</h1>
+            <div className="flex flex-col md:flex-row gap-4">
+                <div className="flex-1">
+                <div className="relative">
+                    <input
+                    type="text"
+                    placeholder="Search products..."
+                    className="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    />
+                    <Search className="absolute left-3 top-2.5 text-gray-400 w-5 h-5" />
+                </div>
+                </div>
+                <button
+                onClick={() => setShowFilters(!showFilters)}
+                className="md:hidden flex items-center justify-center px-4 py-2 border rounded-lg"
+                >
+                <Filter className="w-5 h-5 mr-2" />
+                Filters
+                </button>
+
+
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+
+    <div className="min-h-screen bg-gray-50 pt-16">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-8 text-black">
           <div className={`md:w-64 bg-blue-300 p-6 rounded-lg shadow-sm ${showFilters ? 'block' : 'hidden md:block'}`}>
@@ -40,6 +74,7 @@ const ProductPage = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
