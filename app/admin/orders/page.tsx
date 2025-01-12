@@ -17,6 +17,20 @@ const OrdersPage = () => {
         </select>
         <input type="date" style={{ padding: '10px' }} />
       </div>
+      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <thead>
+          <tr>
+            <th style={{ border: '1px solid #ddd', padding: '10px' }}>Order ID</th>
+            <th style={{ border: '1px solid #ddd', padding: '10px' }}>Customer</th>
+            <th style={{ border: '1px solid #ddd', padding: '10px' }}>Products</th>
+            <th style={{ border: '1px solid #ddd', padding: '10px' }}>Total</th>
+            <th style={{ border: '1px solid #ddd', padding: '10px' }}>Status</th>
+            <th style={{ border: '1px solid #ddd', padding: '10px' }}>Date</th>
+            <th style={{ border: '1px solid #ddd', padding: '10px' }}>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
   );
 };
