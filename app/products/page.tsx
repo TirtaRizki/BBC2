@@ -84,6 +84,17 @@ const ProductPage = () => {
                 </div>
               </div>
 
+               {/* Condition Filter */}
+               <div>
+                <h3 className="font-medium mb-4 text-black">Condition</h3>
+                {['Like New', 'Very Good', 'Good', 'Fair'].map(condition => (
+                  <label key={condition} className="flex items-center space-x-2 mb-2 text-black">
+                    <input type="checkbox" className="rounded" />
+                    <span>{condition}</span>
+                  </label>
+                ))}
+              </div>
+
     <div className="min-h-screen bg-gray-50 pt-16">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-8 text-black">
