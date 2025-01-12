@@ -69,10 +69,20 @@ const ProductPage = () => {
                 ))}
               </div>
 
-
-
-
-
+                {/* Size Filter */}
+            <div>
+                <h3 className="font-medium mb-4 text-black">Size</h3>
+                <div className="grid grid-cols-3 gap-2">
+                  {[38, 39, 40, 41, 42, 43, 44, 45].map(size => (
+                    <button
+                      key={size}
+                      className="px-3 py-2 border rounded-md hover:bg-gray-100 text-black"
+                    >
+                      {size}
+                    </button>
+                  ))}
+                </div>
+              </div>
 
     <div className="min-h-screen bg-gray-50 pt-16">
       <div className="max-w-7xl mx-auto px-4 py-8">
