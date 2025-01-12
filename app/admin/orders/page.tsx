@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const OrdersPage = () => {
+    const [orders] = useState([
+        { id: '#ORD-12345', customer: 'Nurhidayat', products: '2 items', total: 'Rp 2.400.000', status: 'Pending', date: '2024-03-01' },
+        { id: '#ORD-22345', customer: 'Tirta Rizki', products: '3 items', total: 'Rp 3.600.000', status: 'Pending', date: '2024-03-02' },
+      ]);
+
   return (
     <div>
       <h1 className='text-black'>Orders Management</h1>
