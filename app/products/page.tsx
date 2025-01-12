@@ -41,7 +41,7 @@ const ProductPage = () => {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 "
+                className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 bg-black"
               >
                 <option value="newest">Newest</option>
                 <option value="price-low">Price: Low to High</option>
