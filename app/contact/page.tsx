@@ -13,8 +13,9 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-gray-400 pt-16">
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 gap-12"></div>
-        <div>
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* Contact Form */}
+          <div>
             <h2 className="text-3xl font-bold mb-8 text-black">Dapatkan Informasinya!</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -47,8 +48,8 @@ const ContactPage = () => {
             </form>
           </div>
 
-        {/* Contact Info */}
-        <div>
+          {/* Contact Info */}
+          <div>
             <div className="bg-black rounded-xl shadow-sm p-6 mb-8">
               <h3 className="font-bold mb-6">Contact Information</h3>
               <div className="space-y-4">
@@ -83,12 +84,22 @@ const ContactPage = () => {
               </div>
             </div>
 
-
-                </div>
+            {/* Map */}
+            <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d248.26172225031164!2d105.30498884622152!3d-5.3883611577966715!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1736706572762!5m2!1sid!2sid"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
             </div>
-         </div>
-
-    );
+          </div>
+        </div>
+      </div>
+     </div>
+  );
 };
 
 export default ContactPage;
