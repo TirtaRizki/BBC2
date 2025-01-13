@@ -6,6 +6,10 @@ const OrdersPage = () => {
     const [orders] = useState([
         { id: '#ORD-12345', customer: 'Nurhidayat', products: '2 items', total: 'Rp 2.400.000', status: 'Pending', date: '2024-03-01' },
         { id: '#ORD-22345', customer: 'Tirta Rizki', products: '3 items', total: 'Rp 3.600.000', status: 'Pending', date: '2024-03-02' },
+        { id: '#ORD-22346', customer: 'Afrando', products: '2 items', total: 'Rp 2.600.000', status: 'Pending', date: '2024-03-03' },
+        { id: '#ORD-22347', customer: 'Udin', products: '1 items', total: 'Rp 1.600.000', status: 'Pending', date: '2024-03-03' },
+        { id: '#ORD-22346', customer: 'Umar Al-Faruq', products: '2 items', total: 'Rp 2.600.000', status: 'Pending', date: '2024-03-01' },
+        { id: '#ORD-22347', customer: 'Galih Pribadi Utomo', products: '3 items', total: 'Rp 3.600.000', status: 'Pending', date: '2024-03-02' },
     ]);
 
     return (
@@ -17,12 +21,12 @@ const OrdersPage = () => {
                     placeholder="Search by order ID or customer..."
                     style={{ padding: '10px', flex: 1 }}
                 />
-                <select style={{ padding: '10px' }}>
+                <select className='text-black' style={{ padding: '10px' }}>
                     <option className='text-black'>All Status</option>
                     <option className='text-black'>Pending</option>
                     <option className='text-black'>Completed</option>
                 </select>
-                <input type="date" style={{ padding: '10px' }} />
+                <input className='text-black' type="date" style={{ padding: '10px' }} />
             </div>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead className='text-black'>
