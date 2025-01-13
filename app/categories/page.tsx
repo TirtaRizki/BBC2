@@ -10,7 +10,11 @@ const Categories = () => {
       </div>
 
       {/* Buttons Section */}
-      <div></div>
+      <div className="flex flex-wrap justify-center gap-4 mb-16">
+        <button>All Brands</button>
+        <button>New Arrivals</button>
+        <button>Best Sellers</button>
+      </div>
 
       {/* Features Section */}
       <div></div>
