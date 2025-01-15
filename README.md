@@ -9,8 +9,8 @@ SecondBrand.co adalah platform e-katalog modern untuk sepatu branded bekas berku
 
 ## Akses Website
 ### npm run dev
-localhost:3000 //Akses website di browser untuk Pengunjung/User
-localhost:3000/admin //Akses website di browser untuk Admin
+-localhost:3000 //Akses website di browser untuk Pengunjung/User
+-localhost:3000/admin //Akses website di browser untuk Admin
 
 **Struktur Pengerjaan Developer**
 -Setiap Perubahan kode harus di commit dan di push ke repository
