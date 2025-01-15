@@ -7,6 +7,21 @@
 ## Ringkasan
 SecondBrand.co adalah platform e-katalog modern untuk sepatu branded bekas berkualitas premium. Dibangun menggunakan Next.js dan Prisma, platform ini menawarkan pengalaman berbelanja yang mulus untuk pelanggan dan administrator.
 
+## Akses Website
+### npm run dev
+localhost:3000 //Akses website di browser untuk Pengunjung/User
+localhost:3000/admin //Akses website di browser untuk Admin
+
+**Struktur Pengerjaan Developer**
+-Setiap Perubahan kode harus di commit dan di push ke repository
+- Berisi Dokumentasi dan penjelasan tentang setiap fitur yang dibuat, dan hasilnya, serta dalam Perubahan ada Kode/Struktur yang di ubah ( Ada Dokumentasi dan Kode di Setiap Commits Contributor)
+- Dokumentasi setiap commits sudah pasti terupdate dari commits sebelum nya 
+- Cek Secara Berkala dibawah button "Code" berwarna hijau untuk update commits
+
+**Progress**
+- Untuk sampai tanggal 15 Januari 2025 , Pengerjaan berada di 60% 
+- Tahap Finalisasi 16-23 Januari 2025 (Pengerjaan Backend, Autentikasi Login Admin, dan Ada Gambar produk terupdate dari yang sebelum nya kosong)
+
 ## Fitur Utama
 
 ### Fitur Pelanggan
@@ -145,12 +160,14 @@ secondbrand.co/
 Proyek ini dilisensikan di bawah Lisensi MIT - lihat file LICENSE untuk detail.
 
 ## Dukungan
-Untuk dukungan, email ke bantuan@secondbrand.co atau bergabung dengan komunitas Discord kami.
+Untuk dukungan, email ke tirtarzk30@gmail.com atau bergabung dengan komunitas Instagram kami.
 
 ## Tim Pengembang
-- Lead Developer - [Nama Anda]
-- Desainer UI/UX - [Nama Desainer]
-- Manajer Proyek - [Nama PM]
+- Lead Developer - [Tirta Rizki Ramadhan]
+- Desainer UI/UX - [Tirta Rizki Ramadhan, Nurhidyat, Galih Pribadi Utomo]
+- Dokumentasi - [Tirta Rizki Ramadhan, Nurhidyat, Galih Pribadi Utomo]
+- Pengembang Front End & Back End - [Tirta Rizki Ramadhan, Nurhidyat, Galih Pribadi Utomo]
+- Manajer Proyek - [Tirta Rizki Ramadhan]
 
 ## Rencana Pengembangan
 - [ ] Pengembangan aplikasi mobile
