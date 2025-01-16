@@ -5,11 +5,12 @@ import React, { useState } from "react"
 
 const TestimonialPage = () => {
     const [showVerifiedOnly, setShowVerifiedOnly] = useState(false);
-    
+
     return (
-        <main>
+        <main className="p-6">
             <h1 className="text-2xl font-bold mb-4 text-black">Testimonials Management</h1>
 
+            {/* Search and basic filters */}
             <div className="mb-6">
                 <div className="relative max-w-md">
                     <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
@@ -21,8 +22,8 @@ const TestimonialPage = () => {
                 </div>
             </div>
 
-            <div className="flex gap-4 mb-6">
-                {/* Filter All Ratings */}
+            {/* Filter All Ratings */}
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
                 <select className="px-3 py-2 border rounded-lg text-gray-600">
                     <option value="">All Ratings</option>
                     <option value="5">5 Stars</option>
@@ -31,7 +32,7 @@ const TestimonialPage = () => {
                     <option value="2">2 Stars</option>
                     <option value="1">1 Star</option>
                 </select>
-                
+
                 {/* Filter All Status */}
                 <select className="px-3 py-2 border rounded-lg text-gray-600">
                     <option value="">All Status</option>
@@ -40,7 +41,16 @@ const TestimonialPage = () => {
                     <option value="pending">Menunggu</option>
                 </select>
             </div>
-            
+
+            {/* filter by shoe condition */}
+            <select className="px-3 py-2 border rounded-lg text-gray-600">
+                    <option value="">Shoe Condition</option>
+                    <option value="like-new">Like New (90-100%)</option>
+                    <option value="excellent">Excellent (80-89%)</option>
+                    <option value="good">Good (70-79%)</option>
+                    <option value="fair">Fair (Below 70%)</option>
+                </select>
+
             <div className="bg-white rounded-lg shadow-sm p-6 mt-4">
                 <div className="flex justify-between mb-4">
                     <div className="flex items-center gap-3">
