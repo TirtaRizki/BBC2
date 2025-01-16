@@ -1,9 +1,11 @@
 "use client"
 
-import { Search, Star, ThumbsDown, ThumbsUp } from "lucide-react";
-import React from "react"
+import { Search, Star, ThumbsDown, ThumbsUp, Package, Shield, Tag, Clock, Image, MapPin, Calendar, Award, MessageCircle, Share2, Flag, Edit, Trash2 } from "lucide-react";
+import React, { useState } from "react"
 
 const TestimonialPage = () => {
+    const [showVerifiedOnly, setShowVerifiedOnly] = useState(false);
+    
     return (
         <main>
             <h1 className="text-2xl font-bold mb-4 text-black">Testimonials Management</h1>
@@ -139,4 +141,3 @@ const TestimonialPage = () => {
 };
 
 export default TestimonialPage;
-
