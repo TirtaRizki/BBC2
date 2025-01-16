@@ -22,7 +22,7 @@ const TestimonialPage = () => {
                 </div>
             </div>
 
-            {/* Filter All Ratings */}
+            {/* Enhanced Filters */}
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
                 <select className="px-3 py-2 border rounded-lg text-gray-600">
                     <option value="">All Ratings</option>
@@ -32,7 +32,7 @@ const TestimonialPage = () => {
                     <option value="2">2 Stars</option>
                     <option value="1">1 Star</option>
                 </select>
-
+                
                 {/* Filter All Status */}
                 <select className="px-3 py-2 border rounded-lg text-gray-600">
                     <option value="">All Status</option>
@@ -40,16 +40,26 @@ const TestimonialPage = () => {
                     <option value="hidden">Tersembunyi</option>
                     <option value="pending">Menunggu</option>
                 </select>
-            </div>
 
-            {/* filter by shoe condition */}
-            <select className="px-3 py-2 border rounded-lg text-gray-600">
+                {/* filter by shoe condition */}
+                <select className="px-3 py-2 border rounded-lg text-gray-600">
                     <option value="">Shoe Condition</option>
                     <option value="like-new">Like New (90-100%)</option>
                     <option value="excellent">Excellent (80-89%)</option>
                     <option value="good">Good (70-79%)</option>
                     <option value="fair">Fair (Below 70%)</option>
                 </select>
+
+                {/* filter by shoe size */}
+                <select className="px-3 py-2 border rounded-lg text-gray-600">
+                    <option value="">Size Range</option>
+                    <option value="36-37">36-37</option>
+                    <option value="38-39">38-39</option>
+                    <option value="40-41">40-41</option>
+                    <option value="42-43">42-43</option>
+                    <option value="44-45">44-45</option>
+                </select>
+            </div>
 
             <div className="bg-white rounded-lg shadow-sm p-6 mt-4">
                 <div className="flex justify-between mb-4">
