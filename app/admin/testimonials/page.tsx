@@ -64,7 +64,10 @@ const TestimonialPage = () => {
 
             {/* Filter Checkboxes */}
             <div className="flex flex-wrap gap-4 mb-6">
-                
+                <label className="flex items-center gap-2">
+                    <input type="checkbox" className="rounded text-blue-600" />
+                    <span className="text-sm text-black">Verified Purchases Only</span>
+                </label>
             </div>
 
             <div className="bg-white rounded-lg shadow-sm p-6 mt-4">
