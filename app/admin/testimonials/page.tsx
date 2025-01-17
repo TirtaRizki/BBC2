@@ -32,7 +32,7 @@ const TestimonialPage = () => {
                     <option value="2">2 Stars</option>
                     <option value="1">1 Star</option>
                 </select>
-                
+
                 {/* Filter All Status */}
                 <select className="px-3 py-2 border rounded-lg text-gray-600">
                     <option value="">All Status</option>
@@ -59,6 +59,12 @@ const TestimonialPage = () => {
                     <option value="42-43">42-43</option>
                     <option value="44-45">44-45</option>
                 </select>
+            </div>
+
+
+            {/* Filter Checkboxes */}
+            <div className="flex flex-wrap gap-4 mb-6">
+                
             </div>
 
             <div className="bg-white rounded-lg shadow-sm p-6 mt-4">
