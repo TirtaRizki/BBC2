@@ -187,7 +187,7 @@ export default function Home() {
     {/* Sneakers */}
     <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
       <img
-        src="/icons/sneakers-icon.png" 
+        src="/nikeicon.jpg" 
         alt="Sneakers"
         className="aspect-square object-contain bg-gray-200 rounded-lg mb-4 w-full"
       />
@@ -197,7 +197,7 @@ export default function Home() {
     {/* Sports */}
     <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
       <img
-        src="/icons/sports-icon.png" 
+        src="/sport.jpg" 
         alt="Sports"
         className="aspect-square object-contain bg-gray-200 rounded-lg mb-4 w-full"
       />
@@ -207,7 +207,7 @@ export default function Home() {
     {/* Casual */}
     <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
       <img
-        src="/icons/casual-icon.png" 
+        src="/casual.png" 
         alt="Casual"
         className="aspect-square object-contain bg-gray-200 rounded-lg mb-4 w-full"
       />
@@ -217,7 +217,7 @@ export default function Home() {
     {/* Formal */}
     <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
       <img
-        src="/icons/formal-icon.png" 
+        src="/formal.jpg" 
         alt="Formal"
         className="aspect-square object-contain bg-gray-200 rounded-lg mb-4 w-full"
       />
