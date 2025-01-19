@@ -1,47 +1,50 @@
 'use client';
 
-
 import React from 'react';
 import {
   Filter,
-  Facebook,
-  Instagram,
-  Twitter,
-  Star,
-  Heart,
-  Shield,
   Truck,
   Lock,
-  Link,
-  PackageSearchIcon,
+  Shield,
+  Heart,
+  Star,
 } from 'lucide-react';
 
-// Komponen untuk Merek
-const BrandSection = () => (
-  <section className="py-12 bg-gray-50">
-    <div className="max-w-7xl mx-auto px-4">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-        {['Nike', 'Adidas', 'Puma', 'New Balance'].map((brand) => (
-          <div
-            key={brand}
-            className="flex items-center justify-center transform hover:scale-110 transition-transform duration-300"
-          >
-            <span className="text-2xl font-bold text-gray-400 hover:text-gray-600">
-              {brand}
-            </span>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
+// Define features data
+const features = [
+  {
+    title: 'Free Shipping',
+    description: 'Enjoy free shipping on all orders above $50.',
+    icon: () => <Truck className="w-6 h-6 text-blue-500 mx-auto" />,
+  },
+  {
+    title: 'Secure Payment',
+    description: 'Your payment information is safe and secure with us.',
+    icon: () => <Lock className="w-6 h-6 text-blue-500 mx-auto" />,
+  },
+  {
+    title: '24/7 Support',
+    description: 'We are here to help you 24/7 with any questions or concerns.',
+    icon: () => <Shield className="w-6 h-6 text-blue-500 mx-auto" />,
+  },
+];
+
+// Tipe Produk
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  size: string;
+  rating: number;
+  images: string[];
+}
 
 // Komponen Kartu Produk
-const ProductCard = ({ product }: { product: Product }) => (
+const ProductCard: React.FC<{ product: Product }> = ({ product }) => (
   <div className="group relative border rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
     <div className="relative">
       <img
-        src={`/placeholder/${product.id}.jpg`}
+        src={product.images[0]} // Use the first image from the images array
         alt={product.name}
         className="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300"
       />
@@ -69,39 +72,48 @@ const ProductCard = ({ product }: { product: Product }) => (
   </div>
 );
 
-// Tipe Produk
-interface Product {
-  id: number;
-  name: string;
-  price: string;
-  size: string;
-  rating: number;
-}
-
 // Komponen Utama
 export default function Home() {
   const products: Product[] = [
-    { id: 1, name: 'Nike Air Max 90', price: '129.00', size: '42', rating: 4 },
-    { id: 2, name: 'Adidas Ultra Boost', price: '159.00', size: '43', rating: 5 },
-    { id: 3, name: 'Nike Jordan 1', price: '199.00', size: '41', rating: 4 },
-    { id: 4, name: 'Yeezy Boost 350', price: '299.00', size: '44', rating: 5 },
-  ];
-
-  const features = [
     {
-      title: 'Authentic Products',
-      description: 'All items are verified for authenticity.',
-      icon: () => <Shield className="w-12 h-12 mx-auto text-blue-600" />,
+      id: 1,
+      name: 'Nike Air Max 90',
+      price: '129.00',
+      size: '42',
+      rating: 4,
+      images: [
+        '/nike1.jpg',
+      ],
     },
     {
-      title: 'Fast Shipping',
-      description: 'Get your items delivered within 3-5 business days.',
-      icon: () => <Truck className="w-12 h-12 mx-auto text-green-600" />,
+      id: 2,
+      name: 'Adidas Ultra Boost',
+      price: '159.00',
+      size: '43',
+      rating: 5,
+      images: [
+        '/adidas.jpg',
+      ],
     },
     {
-      title: 'Secure Payment',
-      description: 'Shop with confidence using our secure payment system.',
-      icon: () => <Lock className="w-12 h-12 mx-auto text-purple-600" />,
+      id: 3,
+      name: 'Nike Jordan 1',
+      price: '199.00',
+      size: '41',
+      rating: 4,
+      images: [
+        '/nike2.jpg',
+      ],
+    },
+    {
+      id: 4,
+      name: 'Yeezy Boost 350',
+      price: '299.00',
+      size: '44',
+      rating: 5,
+      images: [
+        '/puma.jpg',
+      ],
     },
   ];
 
@@ -111,7 +123,7 @@ export default function Home() {
       <section className="relative flex items-center justify-center min-h-screen text-white">
         <div className="absolute inset-0 z-0">
           <img
-            src={'/LogoBrand.jpg'}
+            src="/LogoBrand.jpg" // Ensure this path is correct
             alt="Hero Background"
             className="w-full h-full object-cover"
           />
@@ -122,18 +134,19 @@ export default function Home() {
             Sepatu Bekas Branded Premium Original
           </h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-200">
-            Sepatu Bekas yang berkualitas dan original, dengan harga yang terjangkau yang di import dari Batam dan Singapore untuk memenuhi kebutuhan Konsumen .
+            Sepatu Bekas yang berkualitas dan original, dengan harga yang terjangkau yang di import dari Batam dan Singapore untuk memenuhi kebutuhan Konsumen.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 transform hover:scale-105">
-          <a href="./products">Lihat Produk</a>
-        </button>
-
+          <a href="./products">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 transform hover:scale-105">
+              Lihat Produk
+            </button>
+          </a>
         </div>
       </section>
 
       {/* Products Section */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <div className="flex items-center justify-between mb-8 bg-blue-400">
+        <div className="flex items-center justify-between mb-8 bg-blue-400 p-4 rounded-lg">
           <h2 className="text-3xl font-bold text-red-900">New Arrivals</h2>
           <button className="flex items-center space-x-2 px-4 py-2 border border-red-300 rounded-lg hover:bg-white">
             <Filter className="w-4 h-4 text-black" />
@@ -187,16 +200,20 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h3 className="text-2xl font-bold mb-6 text-black">Featured Products</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {[1, 2, 3, 4].map((item) => (
+          {products.map((product) => (
             <div
-              key={item}
+              key={product.id}
               className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="aspect-square bg-gray-200 rounded-t-lg"></div>
+              <img
+                src={product.images[0]} // Use the first image from the images array
+                alt={product.name}
+                className="aspect-square bg-gray-200 rounded-t-lg"
+              />
               <div className="p-4">
-                <h4 className="font-medium mb-2 text-black">Nike Air Max</h4>
-                <p className="text-gray-600 text-sm mb-2 text-black">Size 42 - Like New</p>
-                <p className="font-bold text-blue-500">Rp 1.200.000</p>
+                <h4 className="font-medium mb-2 text-black">{product.name}</h4>
+                <p className="text-gray-600 text-sm mb-2">Size {product.size} - Like New</p>
+                <p className="font-bold text-blue-500">${product.price}</p>
               </div>
             </div>
           ))}
