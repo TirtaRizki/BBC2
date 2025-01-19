@@ -88,6 +88,8 @@ const TestimonialPage = () => {
                         <div className="h-10 w-10 bg-gray-200 rounded-full"></div>
                         <div>
                             <p className="font-medium text-black">Galih Pribadi Utomo</p>
+                            <div className="flex items-center gap-2 text-sm text-gray-500"></div>
+                                <span className="text-black">Purchased 2 months ago</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-1">
