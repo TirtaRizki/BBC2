@@ -23,8 +23,11 @@ const AdminLogin = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-
-
+    // Replace with your actual login logic
+    if (email === 'admin@teknokrat.ac.id' && password === '123') {
+        router.push('/admin'); // Redirect using next/router
+      } else {
+      }
 };
 
 return (
