@@ -76,6 +76,10 @@ const TestimonialPage = () => {
                     <input type="checkbox" className="rounded text-blue-600" />
                     <span className="text-sm text-black">With Size Feedback</span>
                 </label>
+                <label className="flex items-center gap-2">
+                    <input type="checkbox" className="rounded text-blue-600" />
+                    <span className="text-sm text-black">Local Pickups Only</span>
+                </label>
             </div>
 
             <div className="bg-white rounded-lg shadow-sm p-6 mt-4">
