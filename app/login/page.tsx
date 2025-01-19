@@ -27,6 +27,7 @@ const AdminLogin = () => {
     if (email === 'admin@teknokrat.ac.id' && password === '123') {
         router.push('/admin'); // Redirect using next/router
       } else {
+        alert('Email/Password Salah! Silahkan Coba Lagi');
       }
 };
 
