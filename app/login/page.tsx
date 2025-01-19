@@ -36,7 +36,25 @@ return (
           <p className="text-gray-600">SecondBrand.co</p>
         </div>
         <form onSubmit={handleSubmit} className="space-y-6" noValidate>
-
+        {/* Email Input */}
+        <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              Email
+            </label>
+            <div className="relative mt-1">
+              <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <input
+                id="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email"
+                required
+                className="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                aria-label="Email"
+              />
+            </div>
+          </div>
 
 
         </form>
