@@ -76,6 +76,22 @@ return (
             </div>
           </div>
 
+                    {/* Remember Me */}
+                    <div className="flex items-center justify-between">
+            <label htmlFor="remember-me" className="flex items-center text-sm text-gray-700">
+              <input
+                id="remember-me"
+                type="checkbox"
+                checked={rememberMe}
+                onChange={(e) => setRememberMe(e.target.checked)}
+                className="h-4 w-4 text-blue-500 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <span className="ml-2">Remember me</span>
+            </label>
+
+            </div>
+
+
 
         </form>
       </div>
