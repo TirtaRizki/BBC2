@@ -180,21 +180,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Categories */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <h3 className="text-2xl font-bold mb-6 text-black">Categories</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-blue-500">
-          {['Sneakers', 'Sports', 'Casual', 'Formal'].map((category) => (
-            <div
-              key={category}
-              className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div className="aspect-square bg-gray-200 rounded-lg mb-4"></div>
-              <p className="text-center font-medium">{category}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+       {/* Featured Categories */}
+<div className="max-w-7xl mx-auto px-4 py-12">
+  <h3 className="text-2xl font-bold mb-6 text-black">Categories</h3>
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-blue-500">
+    {/* Sneakers */}
+    <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+      <img
+        src="/icons/sneakers-icon.png" 
+        alt="Sneakers"
+        className="aspect-square object-contain bg-gray-200 rounded-lg mb-4 w-full"
+      />
+      <p className="text-center font-medium">Sneakers</p>
+    </div>
+
+    {/* Sports */}
+    <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+      <img
+        src="/icons/sports-icon.png" 
+        alt="Sports"
+        className="aspect-square object-contain bg-gray-200 rounded-lg mb-4 w-full"
+      />
+      <p className="text-center font-medium">Sports</p>
+    </div>
+
+    {/* Casual */}
+    <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+      <img
+        src="/icons/casual-icon.png" 
+        alt="Casual"
+        className="aspect-square object-contain bg-gray-200 rounded-lg mb-4 w-full"
+      />
+      <p className="text-center font-medium">Casual</p>
+    </div>
+
+    {/* Formal */}
+    <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+      <img
+        src="/icons/formal-icon.png" 
+        alt="Formal"
+        className="aspect-square object-contain bg-gray-200 rounded-lg mb-4 w-full"
+      />
+      <p className="text-center font-medium">Formal</p>
+    </div>
+  </div>
+</div>
 
       {/* Featured Products */}
       <div className="max-w-7xl mx-auto px-4 py-12">
