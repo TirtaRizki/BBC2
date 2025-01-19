@@ -111,7 +111,7 @@ export default function Home() {
       <section className="relative flex items-center justify-center min-h-screen text-white">
         <div className="absolute inset-0 z-0">
           <img
-            src="/api/placeholder/1920/1080"
+            src={'/LogoBrand.jpg'}
             alt="Hero Background"
             className="w-full h-full object-cover"
           />
@@ -121,7 +121,7 @@ export default function Home() {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Sepatu Bekas Branded Premium Original
           </h1>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-red-400">
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-200">
             Sepatu Bekas yang berkualitas dan original, dengan harga yang terjangkau yang di import dari Batam dan Singapore untuk memenuhi kebutuhan Konsumen .
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 transform hover:scale-105">
