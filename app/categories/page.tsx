@@ -99,7 +99,25 @@ const CategoryPage = () => {
           </div>
         ))}
       </div>
-      <div> {/* Placeholder untuk Main Content Section */} </div>
+
+      {/* Featured Collections */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {[
+          { title: 'Limited Edition', desc: 'Item langka dari merek premium' },
+          { title: 'New Arrivals', desc: 'Tambahan terbaru dalam koleksi kami' }
+        ].map((collection) => (
+          <div
+            key={collection.title}
+            className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow"
+          >
+            <h3 className="font-bold mb-2">{collection.title}</h3>
+            <p className="text-gray-600 text-sm mb-4">{collection.desc}</p>
+            <button className="text-blue-600 text-sm font-medium">
+              View Collection
+            </button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
