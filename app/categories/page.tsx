@@ -83,6 +83,22 @@ const CategoryPage = () => {
         <ChevronRight className="w-4 h-4" />
         <span className="text-blue-600">{activeCategory}</span>
       </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        {[1, 2, 3, 4, 5, 6].map((item) => (
+          <div
+            key={item}
+            className="group relative overflow-hidden rounded-lg transition-all hover:shadow-md"
+          >
+            <div className="aspect-square bg-gray-100"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+              <div className="p-4 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                <p className="text-white font-medium">Nike Air Max</p>
+                <p className="text-white/80 text-sm">Mulai dari Rp 800.000</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
       <div> {/* Placeholder untuk Main Content Section */} </div>
     </div>
   );
