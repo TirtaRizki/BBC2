@@ -20,7 +20,7 @@ const CategoryPage = () => {
         <div className="max-w-7xl mx-auto px-4 py-16">
           <h1 className="text-4xl font-bold mb-4">Categories</h1>
           <p className="text-blue-100">
-            Temukan koleksi sepatu second-hand premium kami
+          Discover our curated collection of premium second-hand shoes
           </p>
         </div>
         <div className="flex gap-4">
@@ -33,11 +33,11 @@ const CategoryPage = () => {
       </div>
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-black">
             {[
-              { icon: BadgeCheck, title: '100% Asli', desc: 'Dijamin merek asli' },
-              { icon: Shield, title: 'Pembayaran Aman', desc: 'Beragam opsi pembayaran' },
-              { icon: Truck, title: 'Pengiriman Cepat', desc: 'Pengiriman ke seluruh Indonesia' }
+              { icon: BadgeCheck, title : '100% Authentic', desc: 'Guaranteed original brands' },
+              { icon: Shield, title: 'Secure Payment', desc: 'Multiple payment options' },
+              { icon: Truck, title: 'Fast Delivery', desc: 'Nationwide shipping' }
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="flex items-center gap-4">
                 <div className="p-3 bg-blue-50 rounded-full">
@@ -56,7 +56,7 @@ const CategoryPage = () => {
       {/* category list */}
       <div className="md:w-64">
         <div className="bg-white rounded-xl shadow-sm p-6">
-          <h2 className="font-bold mb-4">Browse Categories</h2>
+          <h2 className="font-bold mb-4 text-black">Browse Categories</h2>
           <div className="space-y-2">
             {categories.map((cat) => (
               <button
@@ -101,10 +101,10 @@ const CategoryPage = () => {
       </div>
 
       {/* Featured Collections */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-black">
         {[
-          { title: 'Limited Edition', desc: 'Item langka dari merek premium' },
-          { title: 'New Arrivals', desc: 'Tambahan terbaru dalam koleksi kami' }
+          { title: 'Limited Edition', desc: 'Rare finds from premium brands' },
+          { title: 'New Arrivals', desc: 'Fresh additions to our collection' }
         ].map((collection) => (
           <div
             key={collection.title}
