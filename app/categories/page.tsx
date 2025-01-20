@@ -5,7 +5,14 @@ import React from 'react';
 const CategoryPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
-      <div> {/* Placeholder untuk Hero Section */} </div>
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 py-16">
+          <h1 className="text-4xl font-bold mb-4">Categories</h1>
+          <p className="text-blue-100">
+            Temukan koleksi sepatu second-hand premium kami
+          </p>
+        </div>
+      </div>
       <div> {/* Placeholder untuk Trust Badges Section */} </div>
       <div> {/* Placeholder untuk Main Content Section */} </div>
     </div>
