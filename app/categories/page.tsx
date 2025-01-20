@@ -12,6 +12,13 @@ const CategoryPage = () => {
             Temukan koleksi sepatu second-hand premium kami
           </p>
         </div>
+        <div className="flex gap-4">
+          {['All Brands', 'New Arrivals', 'Best Sellers'].map((item) => (
+            <button key={item} className="px-6 py-2 bg-white/10 rounded-full hover:bg-white/20">
+              {item}
+            </button>
+          ))}
+        </div>
       </div>
       <div> {/* Placeholder untuk Trust Badges Section */} </div>
       <div> {/* Placeholder untuk Main Content Section */} </div>
