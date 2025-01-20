@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import { ChevronRight, Truck, Shield, BadgeCheck } from 'lucide-react';
+
 
 const CategoryPage = () => {
   return (
@@ -20,7 +22,28 @@ const CategoryPage = () => {
           ))}
         </div>
       </div>
-      <div> {/* Placeholder untuk Trust Badges Section */} </div>
+      <div className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { icon: BadgeCheck, title: '100% Asli', desc: 'Dijamin merek asli' },
+              { icon: Shield, title: 'Pembayaran Aman', desc: 'Beragam opsi pembayaran' },
+              { icon: Truck, title: 'Pengiriman Cepat', desc: 'Pengiriman ke seluruh Indonesia' }
+            ].map(({ icon: Icon, title, desc }) => (
+              <div key={title} className="flex items-center gap-4">
+                <div className="p-3 bg-blue-50 rounded-full">
+                  <Icon className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-medium">{title}</h3>
+                  <p className="text-sm text-gray-600">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <div> {/* Placeholder untuk Main Content Section */} </div>
     </div>
   );
