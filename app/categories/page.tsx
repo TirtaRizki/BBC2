@@ -5,6 +5,15 @@ import { ChevronRight, Truck, Shield, BadgeCheck } from 'lucide-react';
 
 
 const CategoryPage = () => {
+  const [activeCategory, setActiveCategory] = React.useState('Sneakers');
+
+  const categories = [
+    { name: 'Sneakers', count: 120 },
+    { name: 'Sports', count: 85 },
+    { name: 'Casual', count: 64 },
+    { name: 'Formal', count: 42 },
+    { name: 'Limited Edition', count: 23 }
+  ];
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
@@ -44,6 +53,27 @@ const CategoryPage = () => {
         </div>
       </div>
 
+      {/* category list */}
+      <div className="md:w-64">
+        <div className="bg-white rounded-xl shadow-sm p-6">
+          <h2 className="font-bold mb-4">Browse Categories</h2>
+          <div className="space-y-2">
+            {categories.map((cat) => (
+              <button
+                key={cat.name}
+                onClick={() => setActiveCategory(cat.name)}
+                className={`w-full flex items-center justify-between px-4 py-2 rounded-lg transition-colors ${activeCategory === cat.name
+                    ? 'bg-blue-50 text-blue-600'
+                    : 'hover:bg-gray-50'
+                  }`}
+              >
+                <span>{cat.name}</span>
+                <span className="text-sm text-gray-500">{cat.count}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
       <div> {/* Placeholder untuk Main Content Section */} </div>
     </div>
   );
