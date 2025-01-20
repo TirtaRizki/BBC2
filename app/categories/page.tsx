@@ -63,8 +63,8 @@ const CategoryPage = () => {
                 key={cat.name}
                 onClick={() => setActiveCategory(cat.name)}
                 className={`w-full flex items-center justify-between px-4 py-2 rounded-lg transition-colors ${activeCategory === cat.name
-                    ? 'bg-blue-50 text-blue-600'
-                    : 'hover:bg-gray-50'
+                  ? 'bg-blue-50 text-blue-600'
+                  : 'hover:bg-gray-50'
                   }`}
               >
                 <span>{cat.name}</span>
@@ -73,6 +73,15 @@ const CategoryPage = () => {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Category content */}
+      <div className="flex items-center gap-2 text-sm text-gray-600 mb-6">
+        <span>Home</span>
+        <ChevronRight className="w-4 h-4" />
+        <span>Categories</span>
+        <ChevronRight className="w-4 h-4" />
+        <span className="text-blue-600">{activeCategory}</span>
       </div>
       <div> {/* Placeholder untuk Main Content Section */} </div>
     </div>
