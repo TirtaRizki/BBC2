@@ -91,6 +91,7 @@ const TestimonialPage = () => {
                             <div className="flex items-center gap-2 text-sm text-gray-500">
                                 <Clock className="h-4 w-4" />
                                 <span>Purchased 2 months ago</span>
+                                <span className="text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">Verified Purchase</span>
                             </div>
                         </div>
                     </div>
