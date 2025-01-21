@@ -95,13 +95,13 @@ const TestimonialPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center gap-1">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                            <Star
-                                key={star}
-                                className="h-5 w-5 text-yellow-400 fill-current"
-                            />
-                        ))}
+                    <div className="flex flex-col items-end">
+                        <div className="flex items-center gap-1">
+                            {[1, 2, 3, 4, 5].map((star) => (
+                                <Star key={star} className="h-5 w-5 text-yellow-400 fill-current" />
+                            ))}
+                        </div>
+                        <span className="text-sm text-gray-500">Overall Rating</span>
                     </div>
                 </div>
                 <p className="text-gray-600 mb-4">
