@@ -104,6 +104,14 @@ const TestimonialPage = () => {
                         <span className="text-sm text-gray-500">Overall Rating</span>
                     </div>
                 </div>
+
+                {/* Product Details */}
+                <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                    <div className="flex items-center gap-4">
+                        <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                    </div>
+                </div>
+
                 <p className="text-gray-600 mb-4">
                     "Layanan dan kualitas yang luar biasa! Sepatu yang saya beli dalam kondisi
                     sangat baik dan persis seperti yang dijelaskan. Pasti akan membeli lagi!"
@@ -145,6 +153,7 @@ const TestimonialPage = () => {
                         ))}
                     </div>
                 </div>
+
                 <p className="text-gray-600 mb-4">
                     "Layanan dan kualitas yang luar biasa! Sepatu yang saya beli dalam kondisi
                     sangat baik dan persis seperti yang dijelaskan. Pasti akan membeli lagi!"
