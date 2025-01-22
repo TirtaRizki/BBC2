@@ -112,7 +112,7 @@ const TestimonialPage = () => {
                         <div>
                             <h3 className="font-medium text-black">Nike Air Jordan 1 Mid</h3>
                             <span className="text-sm bg-blue-100 text-blue-600 px-2 py-1 rounded">Size: 42</span>
-                                
+                            <span className="text-sm bg-purple-100 text-purple-600 px-2 py-1 rounded">Condition: 85%</span>   
                         </div>
                     </div>
                 </div>
