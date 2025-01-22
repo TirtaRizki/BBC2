@@ -83,7 +83,7 @@ const TestimonialPage = () => {
             </div>
 
             <div className="bg-white rounded-lg shadow-sm p-6 mt-4">
-            <div className="flex justify-between mb-4">
+                <div className="flex justify-between mb-4">
                     <div className="flex items-center gap-3">
                         <div className="h-10 w-10 bg-gray-200 rounded-full"></div>
                         <div>
@@ -109,6 +109,9 @@ const TestimonialPage = () => {
                 <div className="bg-gray-50 p-4 rounded-lg mb-4">
                     <div className="flex items-center gap-4">
                         <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                        <div>
+                            <h3 className="font-medium text-black">Nike Air Jordan 1 Mid</h3>
+                        </div>
                     </div>
                 </div>
 
