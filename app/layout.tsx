@@ -5,7 +5,7 @@ import './globals.css';
 import './admin/layout.tsx';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { ShoppingBag, Search, Menu, X, ShieldCheckIcon } from 'lucide-react';
+import { User2Icon, Search, Menu, X, ShieldCheckIcon } from 'lucide-react';
 
 // NavLink Component
 interface NavLinkProps {
@@ -103,6 +103,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </button>
                   <a href="/testimonials" className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-200">
                   <ShieldCheckIcon className="w-5 h-5 text-gray-600" />
+                  </a>
+                  <a href="/login" className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-200">
+                  <User2Icon className="w-5 h-5 text-gray-600" />
                   </a>
                   <button
                     className="md:hidden p-2 hover:bg-gray-100 rounded-full transition-colors duration-200"
