@@ -14,18 +14,18 @@ const ProductPage = () => {
   const [showFilters, setShowFilters] = React.useState(false);
 
   const products = [
-    { name: 'Nike Air Max 90', price: 1200000, rating: 4.5, condition: 'Like New' },
-    { name: 'Adidas Ultra Boost', price: 1500000, rating: 4.8, condition: 'Very Good' },
-    { name: 'Puma RS-X', price: 1000000, rating: 4.3, condition: 'Good' },
-    { name: 'New Balance 574', price: 900000, rating: 4.0, condition: 'Fair' },
-    { name: 'Nike Air Force 1', price: 1100000, rating: 4.7, condition: 'Like New' },
-    { name: 'Adidas Yeezy Boost 350', price: 2500000, rating: 4.9, condition: 'Like New' },
+    { name: 'Nike Air Max 90', price: 1200000, rating: 4.5, condition: 'Like New', image: '/nike1.jpg' },
+    { name: 'Adidas Ultra Boost', price: 1500000, rating: 4.8, condition: 'Very Good', image: '/images/adidas-ultra-boost.jpg' },
+    { name: 'Puma RS-X', price: 1000000, rating: 4.3, condition: 'Good', image: '/images/puma-rs-x.jpg' },
+    { name: 'New Balance 574', price: 900000, rating: 4.0, condition: 'Fair', image: '/images/new-balance-574.jpg' },
+    { name: 'Nike Air Force 1', price: 1100000, rating: 4.7, condition: 'Like New', image: '/images/nike-air-force-1.jpg' },
+    { name: 'Adidas Yeezy Boost 350', price: 2500000, rating: 4.9, condition: 'Like New', image: '/images/adidas-yeezy-boost-350.jpg' },
   ];
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header Section */}
-      <header className="sticky top-0 bg-white shadow-sm z-10 bg-blue-400">
+      <header className="sticky top-0 bg-white shadow-sm z-10">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <h1 className="text-3xl font-bold mb-6 text-gray-900">Our Products</h1>
           
@@ -75,7 +75,7 @@ const ProductPage = () => {
               <div className="space-y-8">
                 {/* Brand Filter */}
                 <section>
-                  <h3 className="font-semibold mb-4 text-gray-900">Brand</h3>
+                <h3 className="font-semibold mb-4 text-gray-900">Brand</h3>
                   <div className="space-y-2">
                     {['Nike', 'Adidas', 'Puma', 'New Balance'].map((brand) => (
                       <label key={brand} className="flex items-center space-x-2 text-gray-700">
@@ -151,7 +151,7 @@ const ProductPage = () => {
                   className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
                 >
                   <div className="relative">
-                    <div className="aspect-square bg-gray-100 rounded-t-lg" />
+                    <img src={product.image} alt={product.name} className="aspect-square bg-gray-100 rounded-t-lg object-cover" />
                     <span className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
                       {product.condition}
                     </span>
@@ -185,7 +185,7 @@ const ProductPage = () => {
             {/* Pagination */}
             <div className="mt-12 flex justify-center">
               <nav className="flex gap-2">
-                <button className="px-4 py-2 border rounded-lg hover:bg-gray-50 text-gray-700">
+                <button className ="px-4 py-2 border rounded-lg hover:bg-gray-50 text-gray-700">
                   Previous
                 </button>
                 {[1, 2].map((page) => (
