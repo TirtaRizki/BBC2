@@ -1,5 +1,6 @@
 'use client';
 
+import { LogOut } from "lucide-react";
 import { useState } from "react";
 
 
@@ -156,6 +157,14 @@ export default function SettingsPage() {
                         >
                             Save Settings
                         </button>
+                        <div className="flex justify-end">
+                        <a href="/login">
+                            <button className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-200 text-red-600">
+                            Logout
+                            <LogOut className="w-5 h-5 text-red-600" />
+                            </button>
+                        </a>
+                        </div>
                     </div>
                 </form>
             </div>
