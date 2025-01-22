@@ -112,7 +112,8 @@ const TestimonialPage = () => {
                         <div>
                             <h3 className="font-medium text-black">Nike Air Jordan 1 Mid</h3>
                             <span className="text-sm bg-blue-100 text-blue-600 px-2 py-1 rounded">Size: 42</span>
-                            <span className="text-sm bg-purple-100 text-purple-600 px-2 py-1 rounded">Condition: 85%</span>   
+                            <span className="text-sm bg-purple-100 text-purple-600 px-2 py-1 rounded">Condition: 85%</span>
+                            <span className="text-sm bg-orange-100 text-orange-600 px-2 py-1 rounded">Usage: 6 months</span>   
                         </div>
                     </div>
                 </div>
@@ -121,6 +122,7 @@ const TestimonialPage = () => {
                     "Layanan dan kualitas yang luar biasa! Sepatu yang saya beli dalam kondisi
                     sangat baik dan persis seperti yang dijelaskan. Pasti akan membeli lagi!"
                 </p>
+                
                 <div className="flex items-center justify-between pt-4 border-t">
                     <div className="flex gap-4">
                         <button className="flex items-center gap-1 text-green-600 hover:text-green-700">
