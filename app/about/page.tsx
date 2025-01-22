@@ -14,6 +14,21 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Story Section */}
+            <div className="max-w-7xl mx-auto px-4 py-16">
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 className="text-3xl font-bold mb-6 text-gray-700">Our Story</h2>
+                        <div className="space-y-4 text-gray-600">
+                            <p>Founded in 2023, SecondBrand.co emerged from a simple vision: to make premium footwear accessible while promoting sustainable fashion choices.</p>
+                            <p>What started as a small passion project has grown into Indonesia's trusted marketplace for authenticated pre-loved branded shoes.</p>
+                            <p>Every pair we sell tells a story, and we're proud to help these stories continue with new owners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 };
