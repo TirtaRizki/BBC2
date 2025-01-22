@@ -124,6 +124,11 @@ const TestimonialPage = () => {
                     "Layanan dan kualitas yang luar biasa! Sepatu yang saya beli dalam kondisi
                     sangat baik dan persis seperti yang dijelaskan. Pasti akan membeli lagi!"
                 </p>
+                
+                {/* Detailed Ratings */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                    
+                </div>
 
                 <div className="flex items-center justify-between pt-4 border-t">
                     <div className="flex gap-4">
