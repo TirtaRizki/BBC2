@@ -111,6 +111,8 @@ const TestimonialPage = () => {
                         <div className="h-20 w-20 bg-gray-200 rounded"></div>
                         <div>
                             <h3 className="font-medium text-black">Nike Air Jordan 1 Mid</h3>
+                            <span className="text-sm bg-blue-100 text-blue-600 px-2 py-1 rounded">Size: 42</span>
+                                
                         </div>
                     </div>
                 </div>
