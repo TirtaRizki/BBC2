@@ -78,7 +78,7 @@ export default function Home() {
     {
       id: 1,
       name: 'Nike Air Max 90',
-      price: '129.00',
+      price: '1.129.000',
       size: '42',
       rating: 4,
       images: [
@@ -88,7 +88,7 @@ export default function Home() {
     {
       id: 2,
       name: 'Adidas Ultra Boost',
-      price: '159.00',
+      price: '1,159.000',
       size: '43',
       rating: 5,
       images: [
@@ -98,7 +98,7 @@ export default function Home() {
     {
       id: 3,
       name: 'Nike Jordan 1',
-      price: '199.00',
+      price: '1.999.000',
       size: '41',
       rating: 4,
       images: [
@@ -108,7 +108,7 @@ export default function Home() {
     {
       id: 4,
       name: 'Yeezy Boost 350',
-      price: '299.00',
+      price: '1.299.000',
       size: '44',
       rating: 5,
       images: [
@@ -243,7 +243,7 @@ export default function Home() {
               <div className="p-4">
                 <h4 className="font-medium mb-2 text-black">{product.name}</h4>
                 <p className="text-gray-600 text-sm mb-2">Size {product.size} - Like New</p>
-                <p className="font-bold text-blue-500">${product.price}</p>
+                <p className="font-bold text-blue-500">Rp.{product.price}</p>
               </div>
             </div>
           ))}
