@@ -18,7 +18,7 @@ const ProductPage = () => {
     { name: 'Adidas Ultra Boost', price: 1500000, rating: 4.8, condition: 'Very Good', image: '/adidas.jpg' },
     { name: 'Puma RS-X', price: 1000000, rating: 4.3, condition: 'Good', image: '/puma.jpg' },
     { name: 'New Balance 574', price: 900000, rating: 4.0, condition: 'Fair', image: '/newbalance2.png' },
-    { name: 'Nike Air Force 1', price: 1100000, rating: 4.7, condition: 'Like New', image: '/images/nike-air-force-1.jpg' },
+    { name: 'Nike Air Force 1', price: 1100000, rating: 4.7, condition: 'Like New', image: '/nike2.jpg' },
     { name: 'Adidas Yeezy Boost 350', price: 2500000, rating: 4.9, condition: 'Like New', image: '/images/adidas-yeezy-boost-350.jpg' },
   ];
 
