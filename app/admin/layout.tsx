@@ -3,7 +3,7 @@
 import '../globals.css'; // Correct path to import globals.css
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { ShoppingBag, Search, Menu, X } from 'lucide-react';
+import { ShoppingBag, Users, Menu, X } from 'lucide-react';
 
 // NavLink Component
 interface NavLinkProps {
@@ -77,9 +77,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   SecondBrand.co
                 </h1>
                 <div className="flex items-center space-x-4">
-                  <button className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-200">
-                    <Search className="w-5 h-5 text-gray-600" />
-                  </button>
+                <a href="/admin/settings" className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-200">
+                  <Users className="w-5 h-5 text-blue-200" />
+                </a>
                   <button className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-200">
                     <ShoppingBag className="w-5 h-5 text-gray-600" />
                   </button>
