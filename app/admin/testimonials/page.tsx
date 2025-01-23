@@ -162,6 +162,10 @@ const TestimonialPage = () => {
                             <ThumbsDown className="h-4 w-4" />
                             <span>Dislike</span>
                         </button>
+                        <button className="flex items-center gap-1 text-gray-600">
+                            <MessageCircle className="h-4 w-4" />
+                            <span>Comment (3)</span>
+                        </button>
                     </div>
                     <select className="border rounded px-2 py-1 text-sm text-black">
                         <option>Dipublikasikan</option>
