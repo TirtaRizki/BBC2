@@ -88,6 +88,16 @@ const AboutPage = () => {
                 </div>
             </div>
 
+            {/* CTA Section */}
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+                <div className="max-w-7xl mx-auto px-4 text-center">
+                    <h2 className="text-3xl font-bold mb-6">Join Our Journey</h2>
+                    <p className="mb-8 text-lg">Be part of the sustainable fashion movement</p>
+                    <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-medium hover:bg-gray-100">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
         </div>
     );
 };
