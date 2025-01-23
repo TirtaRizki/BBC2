@@ -26,7 +26,7 @@ const AboutPage = () => {
                             <p>Every pair we sell tells a story, and we're proud to help these stories continue with new owners.</p>
                         </div>
                     </div>
-                   {/* Statistic Cards */}
+                    {/* Statistic Cards */}
                     <div className="grid grid-cols-2 gap-4">
                         <div className="bg-white p-6 rounded-xl shadow-sm">
                             <h3 className="font-bold text-3xl mb-2">5000+</h3>
@@ -44,6 +44,29 @@ const AboutPage = () => {
                             <h3 className="font-bold text-3xl mb-2">50+</h3>
                             <p className="text-gray-600">Brand Partners</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Values Section */}
+            <div className="bg-white py-16">
+                <div className="max-w-7xl mx-auto px-4">
+                    <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
+                    <div className="grid md:grid-cols-4 gap-8">
+                        {[
+                            { icon: Award, title: 'Authenticity', desc: 'Every item thoroughly verified' },
+                            { icon: Users, title: 'Community', desc: 'Building trusted relationships' },
+                            { icon: ShoppingBag, title: 'Quality', desc: 'Premium selection process' },
+                            { icon: Heart, title: 'Sustainability', desc: 'Promoting circular fashion' }
+                        ].map(({ icon: Icon, title, desc }) => (
+                            <div key={title} className="text-center">
+                                <div className="inline-block p-4 bg-blue-50 rounded-full mb-4">
+                                    <Icon className="w-6 h-6 text-blue-600" />
+                                </div>
+                                <h3 className="font-bold mb-2">{title}</h3>
+                                <p className="text-gray-600">{desc}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
