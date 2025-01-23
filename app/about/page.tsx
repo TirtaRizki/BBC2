@@ -26,6 +26,25 @@ const AboutPage = () => {
                             <p>Every pair we sell tells a story, and we're proud to help these stories continue with new owners.</p>
                         </div>
                     </div>
+                   {/* Statistic Cards */}
+                    <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-white p-6 rounded-xl shadow-sm">
+                            <h3 className="font-bold text-3xl mb-2">5000+</h3>
+                            <p className="text-gray-600">Happy Customers</p>
+                        </div>
+                        <div className="bg-white p-6 rounded-xl shadow-sm">
+                            <h3 className="font-bold text-3xl mb-2">1200+</h3>
+                            <p className="text-gray-600">Products Sold</p>
+                        </div>
+                        <div className="bg-white p-6 rounded-xl shadow-sm">
+                            <h3 className="font-bold text-3xl mb-2">98%</h3>
+                            <p className="text-gray-600">Satisfaction Rate</p>
+                        </div>
+                        <div className="bg-white p-6 rounded-xl shadow-sm">
+                            <h3 className="font-bold text-3xl mb-2">50+</h3>
+                            <p className="text-gray-600">Brand Partners</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
