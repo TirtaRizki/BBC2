@@ -144,6 +144,13 @@ const TestimonialPage = () => {
                         <span className="text-sm text-black">Comfort: 4.5/5</span>
                     </div>
                 </div>
+                
+                {/* Photo Gallery */}
+                <div className="flex gap-2 mb-4">
+                    <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                    <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                    <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                </div>
 
                 <div className="flex items-center justify-between pt-4 border-t">
                     <div className="flex gap-4">
