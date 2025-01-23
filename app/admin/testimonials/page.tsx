@@ -139,6 +139,9 @@ const TestimonialPage = () => {
                         <Tag className="h-4 w-4 text-black" />
                         <span className="text-sm text-black">Value: 4/5</span>
                     </div>
+                    <div className="flex items-center gap-2">
+                        <Award className="h-4 w-4 text-black" />
+                    </div>
                 </div>
 
                 <div className="flex items-center justify-between pt-4 border-t">
