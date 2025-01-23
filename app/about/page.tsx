@@ -27,7 +27,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                     {/* Statistic Cards */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4 text-blue-700">
                         <div className="bg-white p-6 rounded-xl shadow-sm">
                             <h3 className="font-bold text-3xl mb-2">5000+</h3>
                             <p className="text-gray-600">Happy Customers</p>
@@ -51,8 +51,8 @@ const AboutPage = () => {
             {/* Values Section */}
             <div className="bg-white py-16">
                 <div className="max-w-7xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
-                    <div className="grid md:grid-cols-4 gap-8">
+                    <h2 className="text-3xl font-bold text-center mb-12 text-gray-500">Our Values</h2>
+                    <div className="grid md:grid-cols-4 gap-8 text-gray-500">
                         {[
                             { icon: Award, title: 'Authenticity', desc: 'Every item thoroughly verified' },
                             { icon: Users, title: 'Community', desc: 'Building trusted relationships' },
