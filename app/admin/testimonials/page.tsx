@@ -129,7 +129,10 @@ const TestimonialPage = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
                     <div className="flex items-center gap-2">
                         <Package className="h-4 w-4 text-black" />
-                        <span className="text-sm">Condition: 4.5/5</span>
+                        <span className="text-sm text-black">Condition: 4.5/5</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <Shield className="h-4 w-4 text-black" />
                     </div>
                 </div>
 
