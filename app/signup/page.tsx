@@ -26,6 +26,21 @@ const AdminRegistration: React.FC = () => {
     });
     const [errors, setErrors] = React.useState<{ [key: string]: string }>({});
 
+    const validateForm = () => {
+        const newErrors: { [key: string]: string } = {};
+        if (!formData.fullName) newErrors.fullName = 'Name is required';
+        if (!formData.email) newErrors.email = 'Email is required';
+        if (!formData.password) newErrors.password = 'Password is required';
+        if (formData.password !== formData.confirmPassword) {
+            newErrors.confirmPassword = 'Passwords do not match';
+        }
+        if (formData.password.length < 8) {
+            newErrors.password = 'Password must be at least 8 characters';
+        }
+        if (!formData.phone) newErrors.phone = 'Phone number is required';
+        return newErrors;
+    };
+
     return (
         <div className="min-h-screen bg-gray-50 py-12 px-4">
             <div className="max-w-2xl mx-auto">
