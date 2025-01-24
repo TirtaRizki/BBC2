@@ -14,8 +14,14 @@ const ForgotPassword = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
-      <div className="max-w-md w-full"></div>
-
+      <div className="max-w-md w-full">
+      <button 
+          onClick={() => window.location.href = '/admin'}
+          className="flex items-center text-gray-600 hover:text-gray-900 mb-8"
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Login
+        </button>
       <div className="bg-white rounded-xl shadow-lg p-8">
           {!submitted ? (
             <>
@@ -55,7 +61,7 @@ const ForgotPassword = () => {
           )}
         </div>
       </div>
-    // </div>
+    </div>
   );
 };
 
