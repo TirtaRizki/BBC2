@@ -113,6 +113,8 @@ const AdminRegistration: React.FC = () => {
                             {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
                         </div>
 
+                        
+
 
             </div> }
             </div>
