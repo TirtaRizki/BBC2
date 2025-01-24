@@ -19,7 +19,12 @@ const ForgotPassword = () => {
       <div className="bg-white rounded-xl shadow-lg p-8">
           {!submitted ? (
             <>
-
+        <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold text-black">Reset Password</h2>
+                <p className="text-gray-600 mt-2">
+                  Enter your email address and we'll send you instructions to reset your password.
+                </p>
+              </div>
         <form onSubmit={handleSubmit} className="space-y-6">
 
         </form>
