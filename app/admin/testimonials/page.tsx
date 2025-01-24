@@ -1,6 +1,6 @@
 "use client"
 
-import { Search, Star, ThumbsDown, ThumbsUp, Package, Shield, Tag, Clock, Image, MapPin, Calendar, Award, MessageCircle, Share2, Flag, Edit, Trash2 } from "lucide-react";
+import { Search, Star, ThumbsDown, ThumbsUp, Package, Shield, Tag, Clock, Image, MapPin, Calendar, Award, MessageCircle, Share2, Flag, Edit, Trash2, Option } from "lucide-react";
 import React, { useState } from "react"
 
 const TestimonialPage = () => {
@@ -196,6 +196,13 @@ const TestimonialPage = () => {
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                         <span className="text-gray-500">Show:</span>
+                        <select className="border rounded px-2 py-1 text-sm text-black">
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
+                            <option>40</option>
+                            <option>50</option>
+                        </select>
                     </div>
                     <p className="text-gray-500">Showing 1 of 10</p>
                     <div className="flex gap-2">
