@@ -139,7 +139,19 @@ const AdminRegistration: React.FC = () => {
                                 <Building className="absolute left- 3 top-2.5 text-gray-400 w-5 h-5" />
                             </div>
                         </div>
-                        
+
+                        <div>
+                            <label className="block text-sm font-medium mb-2 text-black">Admin Role</label>
+                            <select
+                                value={formData.role}
+                                onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+                                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 text-black"
+                            >
+                                <option value="admin">Store Admin</option>
+                               
+                            </select>
+                        </div>
+
 
             </div> }
             </div>
