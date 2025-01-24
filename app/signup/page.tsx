@@ -65,15 +65,16 @@ const AdminRegistration: React.FC = () => {
     return (
         <div className="min-h-screen bg-gray-50 py-12 px-4">
             <div className="max-w-2xl mx-auto">
-            <button onClick={() => window.location.href = '/login'} className="flex items-center text-gray-600 hover:text-gray-900 mb-8">
+                <button onClick={() => window.location.href = '/login'} className="flex items-center text-gray-600 hover:text-gray-900 mb-8">
                     <ArrowLeft className="w-4 h-4 mr-2" /> Back to Login
                 </button>
-            { <div className="bg-white rounded-xl shadow-lg p-8">
+                { <div className="bg-white rounded-xl shadow-lg p-8">
                     <div className="text-center mb-8">
                         <h2 className="text-2xl font-bold text-black">Create Admin Account</h2>
                         <p className="text-gray-600 mt-2">Fill in the details to register a new admin account</p>
                     </div>
-                    <div>
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                        <div>
                             <label className="block text-sm font-medium mb-2 text-black">Full Name</label>
                             <div className="relative">
                                 <input
@@ -100,7 +101,7 @@ const AdminRegistration: React.FC = () => {
                             </div>
                             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                         </div>
-
+                        
                         <div>
                             <label className="block text-sm font-medium mb-2 text-black">Password</label>
                             <div className="relative">
@@ -113,6 +114,20 @@ const AdminRegistration: React.FC = () => {
                                 <Lock className="absolute left-3 top-2.5 text-gray-400 w-5 h-5" />
                             </div>
                             {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
+                        </div>
+
+                        <div>
+                            <label className="block text-sm font-medium mb-2 text-black">Confirm Password</label>
+                            <div className="relative">
+                                <input
+                                    type="password"
+                                    value={formData.confirmPassword}
+                                    onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
+                                    className={`w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 ${errors.confirmPassword ? 'border-red-500' : ''}`}
+                                />
+                                <Lock className="absolute left-3 top-2.5 text-gray-400 w-5 h-5" />
+                            </div>
+                            {errors.confirmPassword && <p className="text-red-500 text-sm mt-1">{errors.confirmPassword}</p>}
                         </div>
 
                         <div>
@@ -150,16 +165,17 @@ const AdminRegistration: React.FC = () => {
                                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 text-black"
                             >
                                 <option value="admin">Store Admin</option>
-                                <option value="super_admin">Super Admin</option>
-                                <option value="manager">Store Manager</option>
+                               
                             </select>
                         </div>
+
 
                         <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
                             Create Account
                         </button>
 
-            </div> }
+                    </form>
+                </div> }
             </div>
         </div>
     );
