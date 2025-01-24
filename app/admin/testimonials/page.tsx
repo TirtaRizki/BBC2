@@ -181,6 +181,9 @@ const TestimonialPage = () => {
                             <option>Tersembunyi</option>
                             <option>Menunggu</option>
                         </select>
+                        <button className="p-1 text-gray-600 hover:text-blue-600">
+                            <Edit className="h-4 w-4" />
+                        </button>
                     </div>
                 </div>
             </div>
