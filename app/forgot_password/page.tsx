@@ -39,6 +39,12 @@ const ForgotPassword = () => {
                     <Mail className="absolute left-3 top-2.5 text-gray-400 w-5 h-5" />
                   </div>
                 </div>
+                <button 
+                  type="submit"
+                  className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+                >
+                  Send Reset Instructions
+                </button>
         </form>
         </>
     ) : (
