@@ -148,7 +148,8 @@ const AdminRegistration: React.FC = () => {
                                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 text-black"
                             >
                                 <option value="admin">Store Admin</option>
-                               
+                                <option value="super_admin">Super Admin</option>
+                                <option value="manager">Store Manager</option>
                             </select>
                         </div>
 
