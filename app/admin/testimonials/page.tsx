@@ -170,6 +170,10 @@ const TestimonialPage = () => {
                             <Share2 className="h-4 w-4" />
                             <span>Share</span>
                         </button>
+                        <button className="flex items-center gap-1 text-gray-600">
+                            <Flag className="h-4 w-4" />
+                            <span>Report</span>
+                        </button>
                     </div>
                     <select className="border rounded px-2 py-1 text-sm text-black">
                         <option>Dipublikasikan</option>
