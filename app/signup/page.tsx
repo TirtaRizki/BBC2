@@ -65,8 +65,13 @@ const AdminRegistration: React.FC = () => {
     return (
         <div className="min-h-screen bg-gray-50 py-12 px-4">
             <div className="max-w-2xl mx-auto">
-
-
+            
+            { <div className="bg-white rounded-xl shadow-lg p-8">
+                    <div className="text-center mb-8">
+                        <h2 className="text-2xl font-bold text-black">Create Admin Account</h2>
+                        <p className="text-gray-600 mt-2">Fill in the details to register a new admin account</p>
+                    </div>
+            </div> }
             </div>
         </div>
     );
