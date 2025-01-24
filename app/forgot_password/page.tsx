@@ -58,6 +58,11 @@ const ForgotPassword = () => {
             <div className="flex justify-center mb-4">
                 <CheckCircle className="w-12 h-12 text-green-500" />
               </div>
+              { <><h3 className="text-xl font-bold mb-2 text-black">Check Your Email</h3><p className="text-gray-600 mb-6">
+            We've sent password reset instructions to:
+                    <br />
+            <span className="font-medium">{email}</span>
+        </p></> }
             <button 
                 onClick={() => setSubmitted(false)}
                 className="text-blue-600 hover:underline"
