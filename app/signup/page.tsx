@@ -153,6 +153,9 @@ const AdminRegistration: React.FC = () => {
                             </select>
                         </div>
 
+                        <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+                            Create Account
+                        </button>
 
             </div> }
             </div>
