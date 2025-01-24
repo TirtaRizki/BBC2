@@ -92,7 +92,7 @@ return (
               />
               <span className="ml-2">Remember me</span>
             </label>
-            <a href="#" className="text-sm text-blue-500 hover:underline">
+            <a href="/forgot_password" className="text-sm text-blue-500 hover:underline">
               Forgot password?
             </a>
             </div>
