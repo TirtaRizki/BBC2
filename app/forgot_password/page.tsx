@@ -56,7 +56,12 @@ const ForgotPassword = () => {
     ) : (
         <div className="text-center">
 
-
+            <button 
+                onClick={() => setSubmitted(false)}
+                className="text-blue-600 hover:underline"
+              >
+                Try another email
+              </button>
             </div>
           )}
         </div>
