@@ -203,6 +203,7 @@ const TestimonialPage = () => {
                             <option>40</option>
                             <option>50</option>
                         </select>
+                        <span className="text-gray-500">entries</span>
                     </div>
                     <p className="text-gray-500">Showing 1 of 10</p>
                     <div className="flex gap-2">
