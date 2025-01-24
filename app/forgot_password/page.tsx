@@ -55,7 +55,9 @@ const ForgotPassword = () => {
         </>
     ) : (
         <div className="text-center">
-
+            <div className="flex justify-center mb-4">
+                <CheckCircle className="w-12 h-12 text-green-500" />
+              </div>
             <button 
                 onClick={() => setSubmitted(false)}
                 className="text-blue-600 hover:underline"
