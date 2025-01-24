@@ -192,8 +192,11 @@ const TestimonialPage = () => {
             </div>
             
             {/* Next Pagination */}
-            <div className="p-4 border-t">
+            <div className="bg-white p-4 rounded-lg shadow-sm mt-6">
                 <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                    
+                </div>
                     <p className="text-gray-500">Showing 1 of 10</p>
                     <div className="flex gap-2">
                         <button className="px-4 py-2 border rounded text-black">Sebelumnya</button>
