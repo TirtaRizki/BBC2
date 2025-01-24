@@ -41,6 +41,27 @@ const AdminRegistration: React.FC = () => {
         return newErrors;
     };
 
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const formErrors = validateForm();
+        if (Object.keys(formErrors).length === 0) {
+            console.log('Form submitted:', formData);
+            // Optionally reset the form
+            setFormData({
+                fullName: '',
+                email: '',
+                password: '',
+                confirmPassword: '',
+                phone: '',
+                role: 'admin',
+                storeName: ''
+            });
+            setErrors({});
+        } else {
+            setErrors(formErrors);
+        }
+    };
+
     return (
         <div className="min-h-screen bg-gray-50 py-12 px-4">
             <div className="max-w-2xl mx-auto">
