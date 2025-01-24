@@ -144,7 +144,7 @@ const TestimonialPage = () => {
                         <span className="text-sm text-black">Comfort: 4.5/5</span>
                     </div>
                 </div>
-                
+
                 {/* Photo Gallery */}
                 <div className="flex gap-2 mb-4">
                     <div className="h-20 w-20 bg-gray-200 rounded"></div>
@@ -175,11 +175,13 @@ const TestimonialPage = () => {
                             <span>Report</span>
                         </button>
                     </div>
-                    <select className="border rounded px-2 py-1 text-sm text-black">
-                        <option>Dipublikasikan</option>
-                        <option>Tersembunyi</option>
-                        <option>Menunggu</option>
-                    </select>
+                    <div className="flex items-center gap-2">
+                        <select className="border rounded px-2 py-1 text-sm text-black">
+                            <option>Dipublikasikan</option>
+                            <option>Tersembunyi</option>
+                            <option>Menunggu</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
