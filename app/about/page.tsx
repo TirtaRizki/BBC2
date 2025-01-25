@@ -21,9 +21,21 @@ const AboutPage = () => {
                     <div>
                         <h2 className="text-3xl font-bold mb-6 text-gray-700">Our Story</h2>
                         <div className="space-y-4 text-gray-600">
-                            <p>Founded in 2023, SecondBrand.co emerged from a simple vision: to make premium footwear accessible while promoting sustainable fashion choices.</p>
-                            <p>What started as a small passion project has grown into Indonesia's trusted marketplace for authenticated pre-loved branded shoes.</p>
-                            <p>Every pair we sell tells a story, and we're proud to help these stories continue with new owners.</p>
+                            <p>SecondBrand.co hadir sebagai solusi untuk pecinta fashion yang ingin tetap tampil stylish dengan produk branded tanpa perlu merogoh kantong terlalu dalam. Kami percaya bahwa setiap sepatu memiliki cerita, dan setiap langkah bisa membawa perubahan. Dengan konsep yang mengedepankan keberlanjutan, SecondBrand.co menjual sepatu bekas branded berkualitas yang telah melalui proses kurasi ketat, sehingga pelanggan mendapatkan produk terbaik dengan harga terjangkau.</p>
+                            <p>Visi Kami
+
+Menjadi platform terpercaya yang menghubungkan gaya hidup fashionable dengan prinsip keberlanjutan, menciptakan dampak positif bagi pelanggan dan lingkungan.
+
+Misi Kami
+
+Menghadirkan sepatu branded bekas berkualitas dengan harga terjangkau.
+
+Menjamin keaslian dan kualitas produk melalui proses verifikasi yang ketat.
+
+Meningkatkan kesadaran masyarakat akan pentingnya gaya hidup berkelanjutan.
+
+Memberikan pengalaman belanja yang aman, nyaman, dan memuaskan..</p>
+                            <p>"SecondBrand.co - Langkah baru, gaya baru, untuk masa depan yang lebih hijau."</p>
                         </div>
                     </div>
                     {/* Statistic Cards */}
