@@ -190,6 +190,226 @@ const TestimonialPage = () => {
                     </div>
                 </div>
             </div>
+            
+            <div className="bg-white rounded-lg shadow-sm p-6 mt-4">
+                <div className="flex justify-between mb-4">
+                    <div className="flex items-center gap-3">
+                        <div className="h-10 w-10 bg-gray-200 rounded-full"></div>
+                        <div>
+                            <p className="font-medium text-black">Tirta Rizki Ramadhan</p>
+                            <div className="flex items-center gap-2 text-sm text-gray-500">
+                                <Clock className="h-4 w-4" />
+                                <span>Purchased 2 months ago</span>
+                                <span className="text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">Verified Purchase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-end">
+                        <div className="flex items-center gap-1">
+                            {[1, 2, 3, 4, 5].map((star) => (
+                                <Star key={star} className="h-5 w-5 text-yellow-400 fill-current" />
+                            ))}
+                        </div>
+                        <span className="text-sm text-gray-500">Overall Rating</span>
+                    </div>
+                </div>
+
+                {/* Product Details */}
+                <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                    <div className="flex items-center gap-4">
+                        <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                        <div>
+                            <h3 className="font-medium text-black">Nike Air Jordan 1 Zoom Air CMFT</h3>
+                            <div className="flex flex-wrap gap-2 mt-2">
+                                <span className="text-sm bg-blue-100 text-blue-600 px-2 py-1 rounded">Size: 40</span>
+                                <span className="text-sm bg-purple-100 text-purple-600 px-2 py-1 rounded">Condition: 95%</span>
+                                <span className="text-sm bg-orange-100 text-orange-600 px-2 py-1 rounded">Usage: 1 months</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p className="text-gray-600 mb-4">
+                    "Saya baru saja membeli sepatu di toko ini dan benar-benar terkesan! Sepatunya sangat nyaman dan pas di kaki. 
+                    Selain itu, pilihan modelnya sangat beragam dan cocok dengan gaya saya. Pengiriman cepat, dan sepatu sampai 
+                    dalam kondisi baik. Pelayanan juga sangat memuaskan. Saya pasti akan merekomendasikan toko ini ke teman-teman saya!"
+                </p>
+
+                {/* Detailed Ratings */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                    <div className="flex items-center gap-2">
+                        <Package className="h-4 w-4 text-black" />
+                        <span className="text-sm text-black">Condition: 5/5</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <Shield className="h-4 w-4 text-black" />
+                        <span className="text-sm text-black">Authenticity: 5/5</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <Tag className="h-4 w-4 text-black" />
+                        <span className="text-sm text-black">Value: 4.5/5</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <Award className="h-4 w-4 text-black" />
+                        <span className="text-sm text-black">Comfort: 5/5</span>
+                    </div>
+                </div>
+
+                {/* Photo Gallery */}
+                <div className="flex gap-2 mb-4">
+                    <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                    <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                    <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                </div>
+
+                <div className="flex items-center justify-between pt-4 border-t">
+                    <div className="flex gap-4">
+                        <button className="flex items-center gap-1 text-green-600 hover:text-green-700">
+                            <ThumbsUp className="h-4 w-4" />
+                            <span>Like (10)</span>
+                        </button>
+                        <button className="flex items-center gap-1 text-red-600 hover:text-red-700">
+                            <ThumbsDown className="h-4 w-4" />
+                            <span>Dislike (3)</span>
+                        </button>
+                        <button className="flex items-center gap-1 text-gray-600">
+                            <MessageCircle className="h-4 w-4" />
+                            <span>Comment (5)</span>
+                        </button>
+                        <button className="flex items-center gap-1 text-gray-600">
+                            <Share2 className="h-4 w-4" />
+                            <span>Share</span>
+                        </button>
+                        <button className="flex items-center gap-1 text-gray-600">
+                            <Flag className="h-4 w-4" />
+                            <span>Report</span>
+                        </button>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <select className="border rounded px-2 py-1 text-sm text-black">
+                            <option>Dipublikasikan</option>
+                            <option>Tersembunyi</option>
+                            <option>Menunggu</option>
+                        </select>
+                        <button className="p-1 text-gray-600 hover:text-blue-600">
+                            <Edit className="h-4 w-4" />
+                        </button>
+                        <button className="p-1 text-gray-600 hover:text-red-600">
+                            <Trash2 className="h-4 w-4" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-sm p-6 mt-4">
+                <div className="flex justify-between mb-4">
+                    <div className="flex items-center gap-3">
+                        <div className="h-10 w-10 bg-gray-200 rounded-full"></div>
+                        <div>
+                            <p className="font-medium text-black">Nurhidayat</p>
+                            <div className="flex items-center gap-2 text-sm text-gray-500">
+                                <Clock className="h-4 w-4" />
+                                <span>Purchased 2 months ago</span>
+                                <span className="text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">Verified Purchase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-end">
+                        <div className="flex items-center gap-1">
+                            {[1, 2, 3, 4, 5].map((star) => (
+                                <Star key={star} className="h-5 w-5 text-yellow-400 fill-current" />
+                            ))}
+                        </div>
+                        <span className="text-sm text-gray-500">Overall Rating</span>
+                    </div>
+                </div>
+
+                {/* Product Details */}
+                <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                    <div className="flex items-center gap-4">
+                        <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                        <div>
+                            <h3 className="font-medium text-black">Nike Air Jordan 1 Retro High OG</h3>
+                            <div className="flex flex-wrap gap-2 mt-2">
+                                <span className="text-sm bg-blue-100 text-blue-600 px-2 py-1 rounded">Size: 38</span>
+                                <span className="text-sm bg-purple-100 text-purple-600 px-2 py-1 rounded">Condition: 95%</span>
+                                <span className="text-sm bg-orange-100 text-orange-600 px-2 py-1 rounded">Usage: 1 months</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p className="text-gray-600 mb-4">
+                    "Saya sangat puas dengan sepatu yang saya beli di sini! Kualitasnya luar biasa, nyaman dipakai, dan desainnya 
+                    sangat stylish. Proses pembeliannya juga sangat mudah dan pengirimannya cepat. Penjualnya ramah dan responsif, 
+                    memberikan layanan yang sangat baik. Saya pasti akan kembali membeli sepatu di sini lagi. Highly recommended!"
+                </p>
+
+                {/* Detailed Ratings */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                    <div className="flex items-center gap-2">
+                        <Package className="h-4 w-4 text-black" />
+                        <span className="text-sm text-black">Condition: 5/5</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <Shield className="h-4 w-4 text-black" />
+                        <span className="text-sm text-black">Authenticity: 5/5</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <Tag className="h-4 w-4 text-black" />
+                        <span className="text-sm text-black">Value: 4/5</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <Award className="h-4 w-4 text-black" />
+                        <span className="text-sm text-black">Comfort: 4.5/5</span>
+                    </div>
+                </div>
+
+                {/* Photo Gallery */}
+                <div className="flex gap-2 mb-4">
+                    <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                    <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                    <div className="h-20 w-20 bg-gray-200 rounded"></div>
+                </div>
+
+                <div className="flex items-center justify-between pt-4 border-t">
+                    <div className="flex gap-4">
+                        <button className="flex items-center gap-1 text-green-600 hover:text-green-700">
+                            <ThumbsUp className="h-4 w-4" />
+                            <span>Like (12)</span>
+                        </button>
+                        <button className="flex items-center gap-1 text-red-600 hover:text-red-700">
+                            <ThumbsDown className="h-4 w-4" />
+                            <span>Dislike (3)</span>
+                        </button>
+                        <button className="flex items-center gap-1 text-gray-600">
+                            <MessageCircle className="h-4 w-4" />
+                            <span>Comment (7)</span>
+                        </button>
+                        <button className="flex items-center gap-1 text-gray-600">
+                            <Share2 className="h-4 w-4" />
+                            <span>Share</span>
+                        </button>
+                        <button className="flex items-center gap-1 text-gray-600">
+                            <Flag className="h-4 w-4" />
+                            <span>Report</span>
+                        </button>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <select className="border rounded px-2 py-1 text-sm text-black">
+                            <option>Dipublikasikan</option>
+                            <option>Tersembunyi</option>
+                            <option>Menunggu</option>
+                        </select>
+                        <button className="p-1 text-gray-600 hover:text-blue-600">
+                            <Edit className="h-4 w-4" />
+                        </button>
+                        <button className="p-1 text-gray-600 hover:text-red-600">
+                            <Trash2 className="h-4 w-4" />
+                        </button>
+                    </div>
+                </div>
+            </div>
 
             {/* Next Pagination */}
             <div className="bg-white p-4 rounded-lg shadow-sm mt-6">
