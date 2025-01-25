@@ -83,22 +83,32 @@ Memberikan pengalaman belanja yang aman, nyaman, dan memuaskan..</p>
                 </div>
             </div>
 
-            {/* Team Section */}
-            <div className="max-w-7xl mx-auto px-4 py-16">
-                <h2 className="text-3xl font-bold text-center mb-12 text-gray-500">Meet Our Team</h2>
-                <div className="grid md:grid-cols-3 gap-8">
-                    {[1, 2, 3].map((member) => (
-                        <div key={member} className="bg-white rounded-xl shadow-sm overflow-hidden">
-                            <div className="aspect-square bg-gray-100"></div>
-                            <div className="p-6">
-                                <h3 className="font-bold mb-1 text-gray-500">John Doe</h3>
-                                <p className="text-gray-600 mb-4">Co-founder & CEO</p>
-                                <p className="text-sm text-gray-500">Passionate about sustainable fashion and technology.</p>
-                            </div>
-                        </div>
-                    ))}
+           {/* Team Section */}
+<div className="max-w-7xl mx-auto px-4 py-16">
+    <h2 className="text-3xl font-bold text-center mb-12 text-gray-500">Meet Our Team</h2>
+    <div className="grid md:grid-cols-3 gap-8">
+        {[
+            { id: 1, name: 'Ahmad Rio Oktaviansah', role: 'Co-founder & CEO', description: 'Passionate about sustainable fashion and technology.', href: './rio.png' },
+            { id: 2, name: 'Taufiq Kurniawan', role: 'Chief Designer', description: 'Creativity and innovation at its finest.', href: '/rio.png' },
+        ].map((member) => (
+            <div key={member.id} className="bg-white rounded-xl shadow-sm overflow-hidden">
+                <a href={member.href} target="_blank" rel="noopener noreferrer">
+                    <div className="aspect-square bg-gray-100">
+                        {/* Placeholder for member image or additional content */}
+                    </div>
+                </a>
+                <div className="p-6">
+                    <a href={member.href} target="_blank" rel="noopener noreferrer">
+                        <h3 className="font-bold mb-1 text-gray-500">{member.name}</h3>
+                    </a>
+                    <p className="text-gray-600 mb-4">{member.role}</p>
+                    <p className="text-sm text-gray-500">{member.description}</p>
                 </div>
             </div>
+        ))}
+    </div>
+</div>
+
 
             {/* CTA Section */}
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
