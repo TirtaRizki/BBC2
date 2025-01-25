@@ -104,7 +104,7 @@ return (
             >
               Login
             </button>
-            <a href="#" className="text-sm text-blue-500 hover:underline">
+            <a href="/signup" className="text-sm text-blue-500 hover:underline">
               Sign up
             </a>
           </div>
