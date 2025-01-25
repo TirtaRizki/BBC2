@@ -156,11 +156,11 @@ const TestimonialPage = () => {
                     <div className="flex gap-4">
                         <button className="flex items-center gap-1 text-green-600 hover:text-green-700">
                             <ThumbsUp className="h-4 w-4" />
-                            <span>Like</span>
+                            <span>Like (15)</span>
                         </button>
                         <button className="flex items-center gap-1 text-red-600 hover:text-red-700">
                             <ThumbsDown className="h-4 w-4" />
-                            <span>Dislike</span>
+                            <span>Dislike (5)</span>
                         </button>
                         <button className="flex items-center gap-1 text-gray-600">
                             <MessageCircle className="h-4 w-4" />
