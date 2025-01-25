@@ -212,6 +212,7 @@ const TestimonialPage = () => {
                         <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">1</button>
                         <button className="px-4 py-2 border rounded text-gray-600 hover:bg-gray-50">2</button>
                         <button className="px-4 py-2 border rounded text-gray-600 hover:bg-gray-50">3</button>
+                        <button className="px-4 py-2 border rounded text-gray-600 hover:bg-gray-50">Next</button>
                     </div>
                 </div>
             </div>
