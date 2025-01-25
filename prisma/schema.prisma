@@ -50,3 +50,5 @@ enum Role {
   ADMIN
   USER
 }
+
+// Database sudah terintegrasi

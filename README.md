@@ -20,8 +20,9 @@ SecondBrand.co adalah platform e-katalog modern untuk sepatu branded bekas berku
 
 **Progress**
 - Untuk sampai tanggal 15 Januari 2025 , Pengerjaan berada di 60% 
-- Tahap Finalisasi 16-23 Januari 2025 (Pengerjaan Backend, Autentikasi Login Admin, dan Ada Gambar produk terupdate dari yang sebelum nya kosong)
-
+- Tahap Finalisasi 16-25 Januari 2025 (Pengerjaan Backend, Autentikasi Login Admin, dan Ada Gambar produk terupdate dari yang sebelum nya kosong) 
+- FINALISASI SUDAH SELESAI , SILAHKAN CLONE REPOSTORY JIKA INGIN MELIHAT E- KATALOG
+- LOGIN ADMIN : admin@teknokrat.ac.id // Password : 123
 ## Fitur Utama
 
 ### Fitur Pelanggan
