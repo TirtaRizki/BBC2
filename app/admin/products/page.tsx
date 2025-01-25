@@ -74,6 +74,39 @@ export default function ProductsPage() {
               <button className="text-red-500 text-center">Delete</button>
             </td>
           </tr>
+          <tr>
+            <td className="border p-2 text-black text-left">Adidas Puma</td>
+            <td className="border p-2 text-black text-center">Adidas</td>
+            <td className="border p-2 text-black text-center">44</td>
+            <td className="border p-2 text-black text-center">Rp 2.000.000</td>
+            <td className="border p-2 text-green-500 text-center">Active</td>
+            <td className="border p-2">
+              <button className="text-blue-500 mr-2 text-center">Edit</button>
+              <button className="text-red-500 text-center">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td className="border p-2 text-black text-left">Nike Jordan</td>
+            <td className="border p-2 text-black text-center">Nike</td>
+            <td className="border p-2 text-black text-center">40</td>
+            <td className="border p-2 text-black text-center">Rp 1.500.000</td>
+            <td className="border p-2 text-green-500 text-center">Active</td>
+            <td className="border p-2">
+              <button className="text-blue-500 mr-2 text-center">Edit</button>
+              <button className="text-red-500 text-center">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td className="border p-2 text-black text-left">Adidas Max</td>
+            <td className="border p-2 text-black text-center">Adidas</td>
+            <td className="border p-2 text-black text-center">42</td>
+            <td className="border p-2 text-black text-center">Rp 1.000.000</td>
+            <td className="border p-2 text-green-500 text-center">Active</td>
+            <td className="border p-2">
+              <button className="text-blue-500 mr-2 text-center">Edit</button>
+              <button className="text-red-500 text-center">Delete</button>
+            </td>
+          </tr>
         </tbody>
       </table>
       </div>
